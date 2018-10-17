@@ -30,9 +30,11 @@ To build the `projectriff/buildpack` builder you'll need
 * the https://github.com/buildpack/pack[`pack`] command line tool. At the time of writing,
 a version built from `master` is required (to support references to remote buildpacks in `builder-riff.toml`):
 +
+NOTE: To build `pack` you need a minimum of Go version 1.11 and Go modules enabled (set `GO111MODULE=on`)
++
 [source,bash]
 ----
-git clone https://github.com/buildpack/pack`
+git clone https://github.com/buildpack/pack
 cd pack
 go install ./cmd/pack
 ----
