@@ -1,0 +1,6 @@
+language: bash
+sudo: required
+services:
+  - docker
+install: .travis/install-pack.sh
+script: .travis/build-and-push.sh
