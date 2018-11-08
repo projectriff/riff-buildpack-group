@@ -5,4 +5,4 @@ set -o nounset
 set -o pipefail
 
 
-pack create-builder -b builder-riff.toml projectriff/buildpack:latest
+pack create-builder -b builder-riff.toml projectriff/builder:latest
