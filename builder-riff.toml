@@ -14,6 +14,10 @@ uri = "http://repo.spring.io/libs-snapshot/org/cloudfoundry/openjdk/org.cloudfou
 id = "org.cloudfoundry.buildpacks.nodejs"
 uri = "https://github.com/cloudfoundry/nodejs-cnb/releases/download/v0.0.1-alpha/nodejs-cnb.tgz"
 
+[[buildpacks]]
+id = "org.cloudfoundry.buildpacks.npm"
+uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-c1b7bcfe0d.tgz"
+
 [[groups]]
 
   [[groups.buildpacks]]
@@ -29,6 +33,11 @@ uri = "https://github.com/cloudfoundry/nodejs-cnb/releases/download/v0.0.1-alpha
   [[groups.buildpacks]]
   id = "org.cloudfoundry.buildsystem"
   version = "1.0.0-BUILD-SNAPSHOT"
+  optional = true
+
+  [[groups.buildpacks]]
+  id = "org.cloudfoundry.buildpacks.npm"
+  version = "0.0.1"
   optional = true
 
   [[groups.buildpacks]]
