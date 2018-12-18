@@ -4,40 +4,40 @@ uri = "https://storage.googleapis.com/projectriff/riff-buildpack/latest.tgz"
 
 [[buildpacks]]
 id = "org.cloudfoundry.buildsystem"
-uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M1/org.cloudfoundry.buildsystem-1.0.0-M1.tgz"
+uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M3/org.cloudfoundry.buildsystem-1.0.0-M3.tgz"
 
 [[buildpacks]]
 id = "org.cloudfoundry.openjdk"
-uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M1/org.cloudfoundry.openjdk-1.0.0-M1.tgz"
+uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M3/org.cloudfoundry.openjdk-1.0.0-M3.tgz"
 
 [[buildpacks]]
 id = "org.cloudfoundry.buildpacks.nodejs"
-uri = "https://github.com/cloudfoundry/nodejs-cnb/releases/download/v0.0.1-alpha/nodejs-cnb.tgz"
+uri = "https://github.com/cloudfoundry/nodejs-cnb/releases/download/v0.0.2/nodejs-cnb.tgz"
 
 [[buildpacks]]
 id = "org.cloudfoundry.buildpacks.npm"
-uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-c1b7bcfe0d.tgz"
+uri = "https://github.com/cloudfoundry/npm-cnb/releases/download/v0.0.3/npm-cnb.tgz"
 
 [[groups]]
 
   [[groups.buildpacks]]
   id = "org.cloudfoundry.openjdk"
-  version = "1.0.0-M1"
+  version = "1.0.0-M3"
   optional = true # Irrelevant as this buildpack's detect is a noop, but set for clarity
 
   [[groups.buildpacks]]
   id = "org.cloudfoundry.buildpacks.nodejs"
-  version = "0.0.1"
+  version = "0.0.2"
   optional = true # Irrelevant as this buildpack's detect is a noop, but set for clarity
 
   [[groups.buildpacks]]
   id = "org.cloudfoundry.buildsystem"
-  version = "1.0.0-M1"
+  version = "1.0.0-M3"
   optional = true
 
   [[groups.buildpacks]]
   id = "org.cloudfoundry.buildpacks.npm"
-  version = "0.0.1"
+  version = "0.0.3"
   optional = true
 
   [[groups.buildpacks]]
