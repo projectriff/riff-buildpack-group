@@ -16,7 +16,7 @@ uri = "https://github.com/cloudfoundry/nodejs-cnb/releases/download/v0.0.2/nodej
 
 [[buildpacks]]
 id = "org.cloudfoundry.buildpacks.npm"
-uri = "https://github.com/cloudfoundry/npm-cnb/releases/download/v0.0.3/npm-cnb.tgz"
+uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2280.tgz"
 
 [[groups]]
 
