@@ -4,11 +4,11 @@ uri = "https://storage.googleapis.com/projectriff/riff-buildpack/latest.tgz"
 
 [[buildpacks]]
 id = "org.cloudfoundry.buildsystem"
-uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M3/org.cloudfoundry.buildsystem-1.0.0-M3.tgz"
+uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M4/org.cloudfoundry.buildsystem-1.0.0-M4.tgz"
 
 [[buildpacks]]
 id = "org.cloudfoundry.openjdk"
-uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M3/org.cloudfoundry.openjdk-1.0.0-M3.tgz"
+uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M4/org.cloudfoundry.openjdk-1.0.0-M4.tgz"
 
 [[buildpacks]]
 id = "org.cloudfoundry.buildpacks.nodejs"
@@ -22,7 +22,7 @@ uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2
 
   [[groups.buildpacks]]
   id = "org.cloudfoundry.openjdk"
-  version = "1.0.0-M3"
+  version = "1.0.0-M4"
   optional = true # Irrelevant as this buildpack's detect is a noop, but set for clarity
 
   [[groups.buildpacks]]
@@ -32,7 +32,7 @@ uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2
 
   [[groups.buildpacks]]
   id = "org.cloudfoundry.buildsystem"
-  version = "1.0.0-M3"
+  version = "1.0.0-M4"
   optional = true
 
   [[groups.buildpacks]]
