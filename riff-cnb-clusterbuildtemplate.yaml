@@ -42,6 +42,7 @@ spec:
         - >
           chown -R "${USER_ID}:${GROUP_ID}" "/builder/home" &&
           chown -R "${USER_ID}:${GROUP_ID}" /layers &&
+          chown -R "${USER_ID}:${GROUP_ID}" /workspace &&
           echo "artifact = '${FUNCTION_ARTIFACT}'" > /workspace/riff.toml &&
           echo "handler = '${FUNCTION_HANDLER}'" >> /workspace/riff.toml &&
           echo "override = '${FUNCTION_LANGUAGE}'" >> /workspace/riff.toml

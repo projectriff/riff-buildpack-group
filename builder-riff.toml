@@ -4,7 +4,7 @@ uri = "https://storage.googleapis.com/projectriff/riff-buildpack/latest.tgz"
 
 [[buildpacks]]
 id = "org.cloudfoundry.buildsystem"
-uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M4/org.cloudfoundry.buildsystem-1.0.0-M4.tgz"
+uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M5/org.cloudfoundry.buildsystem-1.0.0-M5.tgz"
 
 [[buildpacks]]
 id = "org.cloudfoundry.openjdk"
@@ -32,7 +32,7 @@ uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2
 
   [[groups.buildpacks]]
   id = "org.cloudfoundry.buildsystem"
-  version = "1.0.0-M4"
+  version = "1.0.0-M5"
   optional = true
 
   [[groups.buildpacks]]
