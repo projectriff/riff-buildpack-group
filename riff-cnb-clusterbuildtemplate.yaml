@@ -102,5 +102,7 @@ spec:
       imagePullPolicy: Always
   volumes:
     - name: cache
-      persistentVolumeClaim:
-        claimName: riff-cnb-cache
+      emptyDir: {}
+      # TODO reenable build cache once knative/build#542 is fixed
+      #persistentVolumeClaim:
+      #  claimName: riff-cnb-cache
