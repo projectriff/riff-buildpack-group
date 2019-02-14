@@ -1,6 +1,6 @@
 [[buildpacks]]
 id = "io.projectriff.riff"
-uri = "https://storage.googleapis.com/projectriff/internal/scothis/io.projectriff.riff-0.2.0-SPIKE-20190213.215434-1.tgz"
+uri = "https://storage.googleapis.com/projectriff/internal/scothis/io.projectriff.riff-0.2.0-BUILD-20190214.090852-1.tgz"
 
 [[buildpacks]]
 id = "io.projectriff.java"
@@ -32,6 +32,8 @@ uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2
 
 [[groups]]
 
+  # language runtime buildpacks
+
   [[groups.buildpacks]]
   id = "org.cloudfoundry.openjdk"
   version = "1.0.0-M5"
@@ -41,6 +43,8 @@ uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2
   id = "org.cloudfoundry.buildpacks.nodejs"
   version = "0.0.2"
   optional = true # Irrelevant as this buildpack's detect is a noop, but set for clarity
+
+  # build-time buildpacks
 
   [[groups.buildpacks]]
   id = "org.cloudfoundry.buildsystem"
@@ -52,7 +56,9 @@ uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2
   version = "0.0.3"
   optional = true
 
-  [[groups.buildpacks]]
+  # riff function buildpacks
+
+ [[groups.buildpacks]]
   id = "io.projectriff.java"
   version = "0.1.4-BUILD-SNAPSHOT"
   optional = true
@@ -67,8 +73,8 @@ uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2
   version = "0.0.8-BUILD-SNAPSHOT"
   optional = true
 
+  # riff "finalizer" buildpack, must be after all other function buildpacks
   [[groups.buildpacks]]
   id = "io.projectriff.riff"
   version = "0.2.0-BUILD-SNAPSHOT"
-  optional = true
-
+  optional = false # this buildpack's detect must pass
