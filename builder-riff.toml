@@ -3,6 +3,18 @@ id = "io.projectriff.riff"
 uri = "https://storage.googleapis.com/projectriff/riff-buildpack/latest.tgz"
 
 [[buildpacks]]
+id = "io.projectriff.java"
+uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/latest.tgz"
+
+[[buildpacks]]
+id = "io.projectriff.node"
+uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/latest.tgz"
+
+[[buildpacks]]
+id = "io.projectriff.command"
+uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/latest.tgz"
+
+[[buildpacks]]
 id = "org.cloudfoundry.buildsystem"
 uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M5/org.cloudfoundry.buildsystem-1.0.0-M5.tgz"
 
@@ -41,6 +53,22 @@ uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2
   optional = true
 
   [[groups.buildpacks]]
+  id = "io.projectriff.java"
+  version = "0.1.4-BUILD-SNAPSHOT"
+  optional = true
+
+  [[groups.buildpacks]]
+  id = "io.projectriff.node"
+  version = "0.1.0-BUILD-SNAPSHOT"
+  optional = true
+
+  [[groups.buildpacks]]
+  id = "io.projectriff.command"
+  version = "0.0.8-BUILD-SNAPSHOT"
+  optional = true
+
+  [[groups.buildpacks]]
   id = "io.projectriff.riff"
   version = "0.2.0-BUILD-SNAPSHOT"
+  optional = true
 
