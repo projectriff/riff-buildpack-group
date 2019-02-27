@@ -1,6 +1,6 @@
 [[buildpacks]]
 id = "io.projectriff.riff"
-uri = "https://storage.googleapis.com/projectriff/internal/scothis/io.projectriff.riff-0.2.0-BUILD-20190214.090852-1.tgz"
+uri = "https://storage.googleapis.com/projectriff/internal/scothis/io.projectriff.riff-0.2.0-BUILD-20190227.125834-1.tgz"
 
 [[buildpacks]]
 id = "io.projectriff.java"
