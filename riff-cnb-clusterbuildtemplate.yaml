@@ -31,6 +31,8 @@ spec:
     - name: GROUP_ID
       description: The group ID of the builder image user
       default: "1000"
+    - name: CACHE_VOLUME
+      description: The name of the PersistentVolumeClaim to use for the build cache.
   steps:
     - name: prepare
       image: ubuntu:18.04
@@ -101,7 +103,5 @@ spec:
       imagePullPolicy: Always
   volumes:
     - name: cache
-      emptyDir: {}
-      # TODO reenable build cache once knative/build#542 is fixed
-      #persistentVolumeClaim:
-      #  claimName: riff-cnb-cache
+      persistentVolumeClaim:
+       claimName: ${CACHE_VOLUME}
