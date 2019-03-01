@@ -16,7 +16,3 @@ sed "s|projectriff/builder:latest|projectriff/builder:${version}|" riff-cnb-clus
 gsutil cp -a public-read riff-cnb-clusterbuildtemplate-${CI_TAG}.yaml gs://projectriff/riff-buildtemplate/
 gsutil cp -a public-read riff-cnb-clusterbuildtemplate-${version}.yaml gs://projectriff/riff-buildtemplate/
 gsutil cp -a public-read riff-cnb-clusterbuildtemplate-${CI_TAG}.yaml gs://projectriff/riff-buildtemplate/riff-cnb-clusterbuildtemplate.yaml
-
-gsutil cp -a public-read riff-cnb-cache.yaml gs://projectriff/riff-buildtemplate/riff-cnb-cache-${CI_TAG}.yaml
-gsutil cp -a public-read riff-cnb-cache.yaml gs://projectriff/riff-buildtemplate/riff-cnb-cache-${version}.yaml
-gsutil cp -a public-read riff-cnb-cache.yaml gs://projectriff/riff-buildtemplate/
