@@ -31,8 +31,9 @@ spec:
     - name: GROUP_ID
       description: The group ID of the builder image user
       default: "1000"
-    - name: CACHE_VOLUME
-      description: The name of the PersistentVolumeClaim to use for the build cache.
+    - name: CACHE
+      description: The name of the volume to use for the build cache.
+      default: empty-dir
   steps:
     - name: prepare
       image: ubuntu:18.04
@@ -49,7 +50,7 @@ spec:
           echo "handler = '${FUNCTION_HANDLER}'" >> /workspace/riff.toml &&
           echo "override = '${FUNCTION_LANGUAGE}'" >> /workspace/riff.toml
       volumeMounts:
-        - name: cache
+        - name: ${CACHE}
           mountPath: /layers
       imagePullPolicy: Always
     - name: detect
@@ -60,7 +61,7 @@ spec:
         - "-group=/layers/group.toml"
         - "-plan=/layers/plan.toml"
       volumeMounts:
-        - name: cache
+        - name: ${CACHE}
           mountPath: /layers
       imagePullPolicy: Always
     - name: analyze
@@ -72,7 +73,7 @@ spec:
         - "-group=/layers/group.toml"
         - "${IMAGE}"
       volumeMounts:
-        - name: cache
+        - name: ${CACHE}
           mountPath: /layers
       imagePullPolicy: Always
     - name: build
@@ -84,7 +85,7 @@ spec:
         - "-group=/layers/group.toml"
         - "-plan=/layers/plan.toml"
       volumeMounts:
-        - name: cache
+        - name: ${CACHE}
           mountPath: /layers
       imagePullPolicy: Always
     - name: export
@@ -98,10 +99,9 @@ spec:
         - "-group=/layers/group.toml"
         - "${IMAGE}"
       volumeMounts:
-        - name: cache
+        - name: ${CACHE}
           mountPath: /layers
       imagePullPolicy: Always
   volumes:
-    - name: cache
-      persistentVolumeClaim:
-       claimName: ${CACHE_VOLUME}
+    - name: empty-dir
+      emptyDir: {}
