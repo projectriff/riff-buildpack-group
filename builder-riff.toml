@@ -24,11 +24,11 @@ uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.
 
 [[buildpacks]]
 id = "org.cloudfoundry.buildpacks.nodejs"
-uri = "https://github.com/cloudfoundry/nodejs-cnb/releases/download/v0.0.2/nodejs-cnb.tgz"
+uri = "https://github.com/cloudfoundry/nodejs-cnb/releases/download/v0.0.4/nodejs-cnb-0.0.4.tgz"
 
 [[buildpacks]]
 id = "org.cloudfoundry.buildpacks.npm"
-uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2280.tgz"
+uri = "https://github.com/cloudfoundry/npm-cnb/releases/download/v0.0.4/npm-cnb-0.0.4.tgz"
 
 [[groups]]
 
@@ -41,7 +41,7 @@ uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2
 
   [[groups.buildpacks]]
   id = "org.cloudfoundry.buildpacks.nodejs"
-  version = "0.0.2"
+  version = "0.0.4"
   optional = true # Irrelevant as this buildpack's detect is a noop, but set for clarity
 
   # build-time buildpacks
@@ -53,7 +53,7 @@ uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2
 
   [[groups.buildpacks]]
   id = "org.cloudfoundry.buildpacks.npm"
-  version = "0.0.3"
+  version = "0.0.4"
   optional = true
 
   # riff function buildpacks
