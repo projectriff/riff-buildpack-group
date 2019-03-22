@@ -78,3 +78,8 @@ uri = "https://storage.googleapis.com/projectriff/npm-buildpack/npm-cnb-5c4c6ec2
   id = "io.projectriff.riff"
   version = "0.2.0-BUILD-SNAPSHOT"
   optional = false # this buildpack's detect must pass
+
+[stack]
+  id = "io.buildpacks.stacks.bionic"
+  build-image = "packs/build:0.0.1-rc.755"
+  run-image = "packs/run:0.0.1-rc.755"

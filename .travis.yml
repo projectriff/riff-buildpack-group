@@ -1,9 +1,9 @@
 language: go
 go:
-  - '1.11.x'
-sudo: required
-services:
-  - docker
+  - '1.12.x'
+cache:
+  directories:
+  - $GOPATH/pkg/mod
 install: .travis/install-pack.sh
 script: .travis/create-builder.sh && make test
 deploy:
