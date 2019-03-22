@@ -1,21 +1,32 @@
 [[testcases]]
-repo = "https://github.com/projectriff-samples/node-square"
-input = "7"
-content-type = "application/json"
-output = "49"
-
-[[testcases]]
-repo = "https://github.com/projectriff-samples/command-hello"
-artifact = "greet.sh"
-input = "world"
+repo = "https://github.com/projectriff-samples/fats-uppercase-java"
+handler = "functions.Upper"
+input = "builder"
 content-type = "text/plain"
-output = "Hello world"
+output = "BUILDER"
 
 [[testcases]]
-repo = "https://github.com/projectriff-samples/java-hello"
-handler = "functions.Hello"
-input = "WORLD"
-content-type = "application/json"
-output = "Hello WORLD"
+repo = "https://github.com/projectriff-samples/fats-uppercase-java-boot"
+input = "builder"
+content-type = "text/plain"
+output = "BUILDER"
 
+[[testcases]]
+repo = "https://github.com/projectriff-samples/fats-uppercase-node"
+artifact = "uppercase.js"
+input = "builder"
+content-type = "text/plain"
+output = "BUILDER"
 
+[[testcases]]
+repo = "https://github.com/projectriff-samples/fats-uppercase-npm"
+input = "builder"
+content-type = "text/plain"
+output = "BUILDER"
+
+[[testcases]]
+repo = "https://github.com/projectriff-samples/fats-uppercase-command"
+artifact = "uppercase.sh"
+input = "builder"
+content-type = "text/plain"
+output = "BUILDER"
