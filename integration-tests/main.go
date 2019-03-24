@@ -19,7 +19,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/BurntSushi/toml"
 	"io/ioutil"
 	"log"
 	"math/rand"
@@ -30,6 +29,8 @@ import (
 	"strings"
 	"syscall"
 	"time"
+
+	"github.com/BurntSushi/toml"
 )
 
 type testcases struct {
@@ -39,9 +40,12 @@ type testcases struct {
 type testcase struct {
 	metadata
 	Repo        string `toml:"repo"`
+	Refspec     string `toml:"refspec"`
+	SubPath     string `toml:"sub-path"`
 	ContentType string `toml:"content-type"`
 	Input       string `toml:"input"`
 	Output      string `toml:"output"`
+	SkipRebuild bool   `toml:"skip-rebuild"`
 }
 
 type metadata struct {
@@ -66,15 +70,16 @@ func main() {
 		} else {
 			defer func() { _ = os.RemoveAll(appdir) }()
 		}
+		fndir := filepath.Join(appdir, t.SubPath)
 
 		cloneRepo(t, appdir)
 
-		createRiffToml(t, appdir)
+		createRiffToml(t, fndir)
 
 		lastSlash := strings.LastIndex(t.Repo, "/")
 		fnImg := fmt.Sprintf("builder-tests/%s-%d", t.Repo[lastSlash+1:], rand.Int31n(10000))
 
-		createFunctionImg(fnImg, appdir)
+		createFunctionImg(fnImg, fndir)
 
 		localPort, docker := startServer(fnImg)
 
@@ -82,12 +87,14 @@ func main() {
 
 		stopFunctionContainer(docker)
 
+		if !t.SkipRebuild {
+			// Re-create function, should use cache
+			createFunctionImg(fnImg, fndir)
+			localPort2, docker := startServer(fnImg)
+			invokeFunction(t, localPort2)
+			stopFunctionContainer(docker)
+		}
 
-		// Re-create function, should use cache
-		createFunctionImg(fnImg, appdir)
-		localPort2, docker := startServer(fnImg)
-		invokeFunction(t, localPort2)
-		stopFunctionContainer(docker)
 		deleteImage(fnImg)
 
 	}
@@ -158,16 +165,24 @@ func cloneRepo(t testcase, appdir string) {
 	if err := runCmd("git", "clone", t.Repo, appdir); err != nil {
 		log.Fatalf("could not clone into %q: %v", appdir, err)
 	}
+	if t.Refspec != "" {
+		dir, _ := os.Getwd()
+		defer os.Chdir(dir)
+		os.Chdir(appdir)
+		if err := runCmd("git", "checkout", t.Refspec); err != nil {
+			log.Fatalf("could not checkout %q: %v", t.Refspec, err)
+		}
+	}
 }
 
-func runCmd(c string, s ... string) error {
+func runCmd(c string, s ...string) error {
 	if cmd, err := startCmd(c, s...); err != nil {
 		return err
 	} else {
 		return cmd.Wait()
 	}
 }
-func startCmd(c string, s ... string) (*exec.Cmd, error) {
+func startCmd(c string, s ...string) (*exec.Cmd, error) {
 	fmt.Printf("RUNNING %s %s\n", c, strings.Join(s, " "))
 	command := exec.Command(c, s...)
 	command.Stderr = os.Stderr

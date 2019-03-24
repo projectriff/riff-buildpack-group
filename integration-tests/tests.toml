@@ -1,31 +1,42 @@
 [[testcases]]
-repo = "https://github.com/projectriff-samples/fats-uppercase-java"
+repo = "https://github.com/projectriff/fats"
+refspec = "9a3c6ed1c184ab37a0651b977d1d7d8f0a62cf07"
+sub-path = "functions/uppercase/java"
 handler = "functions.Upper"
 input = "builder"
 content-type = "text/plain"
 output = "BUILDER"
 
 [[testcases]]
-repo = "https://github.com/projectriff-samples/fats-uppercase-java-boot"
+repo = "https://github.com/projectriff/fats"
+refspec = "9a3c6ed1c184ab37a0651b977d1d7d8f0a62cf07"
+sub-path = "functions/uppercase/java-boot"
 input = "builder"
 content-type = "text/plain"
 output = "BUILDER"
 
 [[testcases]]
-repo = "https://github.com/projectriff-samples/fats-uppercase-node"
+repo = "https://github.com/projectriff/fats"
+refspec = "9a3c6ed1c184ab37a0651b977d1d7d8f0a62cf07"
+sub-path = "functions/uppercase/node"
 artifact = "uppercase.js"
 input = "builder"
 content-type = "text/plain"
 output = "BUILDER"
 
 [[testcases]]
-repo = "https://github.com/projectriff-samples/fats-uppercase-npm"
+repo = "https://github.com/projectriff/fats"
+refspec = "9a3c6ed1c184ab37a0651b977d1d7d8f0a62cf07"
+sub-path = "functions/uppercase/npm"
 input = "builder"
 content-type = "text/plain"
 output = "BUILDER"
+skip-rebuild = true
 
 [[testcases]]
-repo = "https://github.com/projectriff-samples/fats-uppercase-command"
+repo = "https://github.com/projectriff/fats"
+refspec = "9a3c6ed1c184ab37a0651b977d1d7d8f0a62cf07"
+sub-path = "functions/uppercase/command"
 artifact = "uppercase.sh"
 input = "builder"
 content-type = "text/plain"
