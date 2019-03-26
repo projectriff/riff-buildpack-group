@@ -40,15 +40,10 @@ spec:
       command: ["/bin/sh"]
       args:
         - "-c"
-        # Change owner of files to the pack user so that later lifecycle comamnds can read them.
-        # Generate riff.toml
         - >
           chown -R "${USER_ID}:${GROUP_ID}" "/builder/home" &&
           chown -R "${USER_ID}:${GROUP_ID}" /layers &&
-          chown -R "${USER_ID}:${GROUP_ID}" /workspace &&
-          echo "artifact = '${FUNCTION_ARTIFACT}'" > /workspace/riff.toml &&
-          echo "handler = '${FUNCTION_HANDLER}'" >> /workspace/riff.toml &&
-          echo "override = '${FUNCTION_LANGUAGE}'" >> /workspace/riff.toml
+          chown -R "${USER_ID}:${GROUP_ID}" /workspace
       volumeMounts:
         - name: ${CACHE}
           mountPath: /layers
@@ -60,6 +55,15 @@ spec:
         - "-app=/workspace"
         - "-group=/layers/group.toml"
         - "-plan=/layers/plan.toml"
+      env:
+      - name: RIFF
+        value: "true"
+      - name: RIFF_ARTIFACT
+        value: ${FUNCTION_ARTIFACT}
+      - name: RIFF_HANDLER
+        value: ${FUNCTION_HANDLER}
+      - name: RIFF_OVERRIDE
+        value: ${FUNCTION_LANGUAGE}
       volumeMounts:
         - name: ${CACHE}
           mountPath: /layers
@@ -84,6 +88,15 @@ spec:
         - "-app=/workspace"
         - "-group=/layers/group.toml"
         - "-plan=/layers/plan.toml"
+      env:
+      - name: RIFF
+        value: "true"
+      - name: RIFF_ARTIFACT
+        value: ${FUNCTION_ARTIFACT}
+      - name: RIFF_HANDLER
+        value: ${FUNCTION_HANDLER}
+      - name: RIFF_OVERRIDE
+        value: ${FUNCTION_LANGUAGE}
       volumeMounts:
         - name: ${CACHE}
           mountPath: /layers

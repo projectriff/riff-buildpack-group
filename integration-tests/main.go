@@ -74,12 +74,10 @@ func main() {
 
 		cloneRepo(t, appdir)
 
-		createRiffToml(t, fndir)
-
 		lastSlash := strings.LastIndex(t.Repo, "/")
 		fnImg := fmt.Sprintf("builder-tests/%s-%d", t.Repo[lastSlash+1:], rand.Int31n(10000))
 
-		createFunctionImg(fnImg, fndir)
+		createFunctionImg(t.metadata, fnImg, fndir)
 
 		localPort, docker := startServer(fnImg)
 
@@ -89,7 +87,7 @@ func main() {
 
 		if !t.SkipRebuild {
 			// Re-create function, should use cache
-			createFunctionImg(fnImg, fndir)
+			createFunctionImg(t.metadata, fnImg, fndir)
 			localPort2, docker := startServer(fnImg)
 			invokeFunction(t, localPort2)
 			stopFunctionContainer(docker)
@@ -145,19 +143,17 @@ func startServer(fnImg string) (int32, *exec.Cmd) {
 	return localPort, docker
 }
 
-func createFunctionImg(fnImg string, appdir string) {
-	if err := runCmd("pack", "build", "--no-pull", "--builder", "projectriff/builder", "--path", appdir, fnImg); err != nil {
-		log.Fatalf("could not build: %v", err)
-	}
-}
-
-func createRiffToml(t testcase, appdir string) {
-	file, err := os.Create(filepath.Join(appdir, "riff.toml"))
+func createFunctionImg(m metadata, fnImg string, appdir string) {
+	err := runCmd("pack", "build", "--no-pull",
+		"--builder", "projectriff/builder",
+		"--path", appdir,
+		"--env", fmt.Sprintf("%s=%s", "RIFF", "true"),
+		"--env", fmt.Sprintf("%s=%s", "RIFF_ARTIFACT", m.Artifact),
+		"--env", fmt.Sprintf("%s=%s", "RIFF_HANDLER", m.Handler),
+		"--env", fmt.Sprintf("%s=%s", "RIFF_OVERRIDE", m.Override),
+		fnImg)
 	if err != nil {
-		log.Fatalf("failed to create riff.toml: %v", err)
-	}
-	if err = toml.NewEncoder(file).Encode(t.metadata); err != nil {
-		log.Fatalf("failed to write riff.toml data: %v", err)
+		log.Fatalf("could not build: %v", err)
 	}
 }
 

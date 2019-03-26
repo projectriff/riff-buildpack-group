@@ -9,4 +9,4 @@ set -o pipefail
 # export PATH="$HOME/bin:$PATH"
 
 # master as of 2019-03-21
-GO111MODULE=on go get github.com/buildpack/pack/cmd/pack@40640e5370f31452b955e8aa538e4d1c67b34d9c
+GO111MODULE=on go get github.com/buildpack/pack/cmd/pack@ebc7c99fc236c4757c6138dfe9234e575f56fb18
