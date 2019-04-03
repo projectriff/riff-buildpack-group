@@ -18,7 +18,7 @@ spec:
       description: Explicit language to use for the function, will skip detection.
     - name: RUN_IMAGE
       description: The run image buildpacks will use as the base for IMAGE.
-      default: packs/run:0.0.1-rc.755
+      default: packs/run:0.1.0
     - name: BUILDER_IMAGE
       description: The builder image provides the buildpacks that will build the IMAGE from source.
       default: projectriff/builder:latest

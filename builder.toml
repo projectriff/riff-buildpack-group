@@ -32,5 +32,5 @@ buildpacks = [
 
 [stack]
   id = "io.buildpacks.stacks.bionic"
-  build-image = "packs/build:0.0.1-rc.755"
-  run-image = "packs/run:0.0.1-rc.755"
+  build-image = "packs/build:0.1.0"
+  run-image = "packs/run:0.1.0"
