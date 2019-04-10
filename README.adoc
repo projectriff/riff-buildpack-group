@@ -4,7 +4,7 @@ This repository hosts the files necessary to create the buildpack builder used w
 riff builds functions from source with the `riff function create <fn-name>`
 command.
 
-== Relation to the https://github.com/projectriff?utf8=✓&q=function-buildpack[projectriff/*-fuction-buildpack] Repositories
+== Relation to the https://github.com/projectriff?utf8=✓&q=function-buildpack[projectriff/*-function-buildpack] Repositories
 In the v3 buildpack ecosystem, a distinction needs to be made between a _buildpack_
 and a _builder_.
 
@@ -17,8 +17,8 @@ The purpose of this repository is to allow the creation of that builder.
 The former, a _buildpack_, is a more fine grained unit of logic that can be composed and
 collaborate with other buildpacks. The https://github.com/projectriff/java-function-buildpack[projectriff/java-function-buildpack]
 repository hosts one of them, responsible for applying the riff-specific logic on top of
-the more general _java_ or _node_ building logic. As more languages become supported by riff,
-that buildpack will evolve to collaborate with other buildpacks (_e.g._ `python`), while this
+the more general _java_ building logic. As more languages become supported by riff,
+other riff function buildpacks will be added to collaborate with other buildpacks (_e.g._ `python`), while this
 repository's `builder.toml` file will enhance its group(s) to reference _e.g._ the generic
 `python` buildpack.
 
@@ -26,9 +26,9 @@ repository's `builder.toml` file will enhance its group(s) to reference _e.g._ t
 === Prerequisites
 To build the `projectriff/builder` builder you'll need
 
-* Go 1.11+
+* Go 1.12+
 * a running local docker daemon
-* the https://github.com/buildpack/pack[`pack`] command line tool, https://github.com/buildpack/pack/releases[version] `>= 0.0.5`.
+* the https://github.com/buildpack/pack[`pack`] command line tool, https://github.com/buildpack/pack/releases[version] `>= 0.1.0`.
 
 === Creating the Builder
 Then, building the builder is as simple as
@@ -36,7 +36,7 @@ Then, building the builder is as simple as
 ----
 git clone https://github.com/projectriff/builder
 cd builder
-pack create-builder -b builder.toml projectriff/builder
+make
 ----
 
 === Using the Builder Locally
