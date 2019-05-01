@@ -1,33 +1,33 @@
 buildpacks = [
-  { id = "io.projectriff.java",                uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-0.1.4.tgz" },
-  { id = "io.projectriff.node",                uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-0.1.0.tgz" },
-  { id = "io.projectriff.command",             uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/io.projectriff.command-0.0.8.tgz" },
-  { id = "org.cloudfoundry.openjdk",           uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M5/org.cloudfoundry.openjdk-1.0.0-M5.tgz" },
-  { id = "org.cloudfoundry.buildsystem",       uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M5/org.cloudfoundry.buildsystem-1.0.0-M5.tgz" },
-  { id = "org.cloudfoundry.buildpacks.nodejs", uri = "https://github.com/cloudfoundry/nodejs-cnb/releases/download/v0.0.4/nodejs-cnb-0.0.4.tgz" },
-  { id = "org.cloudfoundry.buildpacks.npm",    uri = "https://github.com/cloudfoundry/npm-cnb/releases/download/v0.0.4/npm-cnb-0.0.4.tgz" },
+  { id = "io.projectriff.java",                uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/latest.tgz" },
+  { id = "io.projectriff.node",                uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/latest.tgz" },
+  { id = "io.projectriff.command",             uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/latest.tgz" },
+  { id = "org.cloudfoundry.openjdk",           uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M7/org.cloudfoundry.openjdk-1.0.0-M7.tgz" },
+  { id = "org.cloudfoundry.buildsystem",       uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M7/org.cloudfoundry.buildsystem-1.0.0-M7.tgz" },
+  { id = "org.cloudfoundry.buildpacks.nodejs", uri = "https://github.com/cloudfoundry/nodejs-cnb/releases/download/v0.0.8/nodejs-cnb-0.0.8.tgz" },
+  { id = "org.cloudfoundry.buildpacks.npm",    uri = "https://github.com/cloudfoundry/npm-cnb/releases/download/v0.0.7/npm-cnb-0.0.7.tgz" },
 ]
 
 [[groups]]
   # java functions
   buildpacks = [
-    { id = "org.cloudfoundry.openjdk",     version = "1.0.0-M5", optional = true },
-    { id = "org.cloudfoundry.buildsystem", version = "1.0.0-M5", optional = true },
-    { id = "io.projectriff.java", version = "0.1.4" },
+    { id = "org.cloudfoundry.openjdk",     version = "1.0.0-M7", optional = true },
+    { id = "org.cloudfoundry.buildsystem", version = "1.0.0-M7", optional = true },
+    { id = "io.projectriff.java", version = "0.1.5-BUILD-SNAPSHOT" },
   ]
 
 [[groups]]
   # node functions
   buildpacks = [
-    { id = "org.cloudfoundry.buildpacks.nodejs", version = "0.0.4", optional = true },
-    { id = "org.cloudfoundry.buildpacks.npm",    version = "0.0.4", optional = true },
-    { id = "io.projectriff.node", version = "0.1.0" },
+    { id = "org.cloudfoundry.buildpacks.nodejs", version = "0.0.8", optional = true },
+    { id = "org.cloudfoundry.buildpacks.npm",    version = "0.0.7", optional = true },
+    { id = "io.projectriff.node", version = "0.1.1-BUILD-SNAPSHOT" },
   ]
-  
+
 [[groups]]
   # command functions
   buildpacks = [
-    { id = "io.projectriff.command", version = "0.0.8" },
+    { id = "io.projectriff.command", version = "0.0.9-BUILD-SNAPSHOT" },
   ]
 
 [stack]
