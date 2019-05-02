@@ -7,7 +7,7 @@ build-dev:
 	pack create-builder -b builder-dev.toml projectriff/builder
 
 test: grab-run-image
-	cd integration-tests && GO111MODULE=on go run main.go
+	cd acceptance && GO111MODULE=on go test -v -tags=acceptance .
 
 grab-run-image:
 	docker pull packs/run:0.1.0
