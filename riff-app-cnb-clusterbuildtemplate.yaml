@@ -1,7 +1,7 @@
 apiVersion: build.knative.dev/v1alpha1
 kind: ClusterBuildTemplate
 metadata:
-  name: cf-cnb
+  name: riff-app-cnb
 spec:
   parameters:
     - name: IMAGE
