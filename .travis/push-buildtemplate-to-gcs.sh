@@ -11,14 +11,14 @@ CI_TAG="${version}-ci-${id}"
 gcloud auth activate-service-account --key-file <(echo $GCLOUD_CLIENT_SECRET | base64 --decode)
 
 # function build template
-sed "s|projectriff/builder:latest|projectriff/builder:${CI_TAG}|" riff-cnb-clusterbuildtemplate.yaml > riff-cnb-clusterbuildtemplate-${CI_TAG}.yaml
-sed "s|projectriff/builder:latest|projectriff/builder:${version}|" riff-cnb-clusterbuildtemplate.yaml > riff-cnb-clusterbuildtemplate-${version}.yaml
+sed "s|projectriff/builder:latest|projectriff/builder:${CI_TAG}|" riff-function-clusterbuildtemplate.yaml > riff-function-clusterbuildtemplate-${CI_TAG}.yaml
+sed "s|projectriff/builder:latest|projectriff/builder:${version}|" riff-function-clusterbuildtemplate.yaml > riff-function-clusterbuildtemplate-${version}.yaml
 
-gsutil cp -a public-read riff-cnb-clusterbuildtemplate-${CI_TAG}.yaml gs://projectriff/riff-buildtemplate/
-gsutil cp -a public-read riff-cnb-clusterbuildtemplate-${version}.yaml gs://projectriff/riff-buildtemplate/
-gsutil cp -a public-read riff-cnb-clusterbuildtemplate-${CI_TAG}.yaml gs://projectriff/riff-buildtemplate/riff-cnb-clusterbuildtemplate.yaml
+gsutil cp -a public-read riff-function-clusterbuildtemplate-${CI_TAG}.yaml gs://projectriff/riff-buildtemplate/
+gsutil cp -a public-read riff-function-clusterbuildtemplate-${version}.yaml gs://projectriff/riff-buildtemplate/
+gsutil cp -a public-read riff-function-clusterbuildtemplate-${CI_TAG}.yaml gs://projectriff/riff-buildtemplate/riff-function-clusterbuildtemplate.yaml
 
 # application build template
-gsutil cp -a public-read riff-app-cnb-clusterbuildtemplate.yaml gs://projectriff/riff-buildtemplate/riff-app-cnb-clusterbuildtemplate-${CI_TAG}.yaml
-gsutil cp -a public-read riff-app-cnb-clusterbuildtemplate.yaml gs://projectriff/riff-buildtemplate/riff-app-cnb-clusterbuildtemplate-${version}.yaml
-gsutil cp -a public-read riff-app-cnb-clusterbuildtemplate.yaml gs://projectriff/riff-buildtemplate/riff-app-cnb-clusterbuildtemplate.yaml
+gsutil cp -a public-read riff-application-clusterbuildtemplate.yaml gs://projectriff/riff-buildtemplate/riff-application-clusterbuildtemplate-${CI_TAG}.yaml
+gsutil cp -a public-read riff-application-clusterbuildtemplate.yaml gs://projectriff/riff-buildtemplate/riff-application-clusterbuildtemplate-${version}.yaml
+gsutil cp -a public-read riff-application-clusterbuildtemplate.yaml gs://projectriff/riff-buildtemplate/riff-application-clusterbuildtemplate.yaml

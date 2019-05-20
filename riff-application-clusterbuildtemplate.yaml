@@ -1,27 +1,17 @@
 apiVersion: build.knative.dev/v1alpha1
 kind: ClusterBuildTemplate
 metadata:
-  name: riff-cnb
+  name: riff-application
 spec:
   parameters:
     - name: IMAGE
       description: The image you wish to create. For example, "repo/example", or "example.com/repo/image".
-    - name: FUNCTION_ARTIFACT
-      default: ""
-      description: Path to the function artifact, source code or jar file (attempts
-        detection if not specified)
-    - name: FUNCTION_HANDLER
-      default: ""
-      description: Name of method or class to invoke (see specific invoker for detail)
-    - name: FUNCTION_LANGUAGE
-      default: ""
-      description: Explicit language to use for the function, will skip detection.
     - name: RUN_IMAGE
       description: The run image buildpacks will use as the base for IMAGE.
       default: packs/run:0.1.0
     - name: BUILDER_IMAGE
       description: The builder image provides the buildpacks that will build the IMAGE from source.
-      default: projectriff/builder:latest
+      default: cloudfoundry/cnb:bionic
     - name: USE_CRED_HELPERS
       description: Use Docker credential helpers for Google's GCR, Amazon's ECR, or Microsoft's ACR.
       default: 'true'
@@ -55,15 +45,6 @@ spec:
         - "-app=/workspace"
         - "-group=/layers/group.toml"
         - "-plan=/layers/plan.toml"
-      env:
-      - name: RIFF
-        value: "true"
-      - name: RIFF_ARTIFACT
-        value: ${FUNCTION_ARTIFACT}
-      - name: RIFF_HANDLER
-        value: ${FUNCTION_HANDLER}
-      - name: RIFF_OVERRIDE
-        value: ${FUNCTION_LANGUAGE}
       volumeMounts:
         - name: ${CACHE}
           mountPath: /layers
@@ -88,15 +69,6 @@ spec:
         - "-app=/workspace"
         - "-group=/layers/group.toml"
         - "-plan=/layers/plan.toml"
-      env:
-      - name: RIFF
-        value: "true"
-      - name: RIFF_ARTIFACT
-        value: ${FUNCTION_ARTIFACT}
-      - name: RIFF_HANDLER
-        value: ${FUNCTION_HANDLER}
-      - name: RIFF_OVERRIDE
-        value: ${FUNCTION_LANGUAGE}
       volumeMounts:
         - name: ${CACHE}
           mountPath: /layers
