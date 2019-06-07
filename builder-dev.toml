@@ -1,11 +1,11 @@
 buildpacks = [
-  { id = "io.projectriff.java",                latest = true, uri = "../java-function-buildpack/artifactory/io/projectriff/java/io.projectriff.java/latest" },
-  { id = "io.projectriff.node",                latest = true, uri = "../node-function-buildpack/artifactory/io/projectriff/node/io.projectriff.node/latest" },
-  { id = "io.projectriff.command",             latest = true, uri = "../command-function-buildpack/artifactory/io/projectriff/command/io.projectriff.command/latest" },
-  { id = "org.cloudfoundry.openjdk",           latest = true, uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M8/org.cloudfoundry.openjdk-1.0.0-M8.tgz" },
-  { id = "org.cloudfoundry.buildsystem",       latest = true, uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M8/org.cloudfoundry.buildsystem-1.0.0-M8.tgz" },
-  { id = "org.cloudfoundry.nodejs", latest = true, uri = "https://github.com/cloudfoundry/nodejs-cnb/releases/download/v0.0.10/nodejs-cnb-0.0.10.tgz" },
-  { id = "org.cloudfoundry.npm",    latest = true, uri = "https://github.com/cloudfoundry/npm-cnb/releases/download/v0.0.8/npm-cnb-0.0.8.tgz" },
+  { id = "io.projectriff.java",            latest = true, uri = "../java-function-buildpack/artifactory/io/projectriff/java/io.projectriff.java/latest" },
+  { id = "io.projectriff.node",            latest = true, uri = "../node-function-buildpack/artifactory/io/projectriff/node/io.projectriff.node/latest" },
+  { id = "io.projectriff.command",         latest = true, uri = "../command-function-buildpack/artifactory/io/projectriff/command/io.projectriff.command/latest" },
+  { id = "org.cloudfoundry.openjdk",       latest = true, uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M8/org.cloudfoundry.openjdk-1.0.0-M8.tgz" },
+  { id = "org.cloudfoundry.buildsystem",   latest = true, uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M8/org.cloudfoundry.buildsystem-1.0.0-M8.tgz" },
+  { id = "org.cloudfoundry.nodejs-engine", latest = true, uri = "https://github.com/cloudfoundry/node-engine-cnb/releases/download/v0.0.10/node-engine-cnb-0.0.10.tgz" },
+  { id = "org.cloudfoundry.npm",           latest = true, uri = "https://github.com/cloudfoundry/npm-cnb/releases/download/v0.0.8/npm-cnb-0.0.8.tgz" },
 ]
 
 [[groups]]
@@ -19,9 +19,9 @@ buildpacks = [
 [[groups]]
   # node functions
   buildpacks = [
-    { id = "org.cloudfoundry.nodejs", version = 'latest', optional = true },
-    { id = "org.cloudfoundry.npm",    version = 'latest', optional = true },
-    { id = "io.projectriff.node",                version = 'latest' },
+    { id = "org.cloudfoundry.nodejs-engine", version = 'latest', optional = true },
+    { id = "org.cloudfoundry.npm",           version = 'latest', optional = true },
+    { id = "io.projectriff.node",            version = 'latest' },
   ]
 
 [[groups]]
