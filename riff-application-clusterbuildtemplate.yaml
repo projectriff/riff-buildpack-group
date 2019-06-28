@@ -11,7 +11,7 @@ spec:
     default: cloudfoundry/cnb:bionic
   - name: USE_CRED_HELPERS
     description: Use Docker credential helpers for Google's GCR, Amazon's ECR, or Microsoft's ACR.
-    default: 'true'
+    default: 'false'
   - name: CACHE
     description: The name of the persistent app cache volume
     default: empty-dir
