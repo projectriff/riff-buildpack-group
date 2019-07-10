@@ -71,6 +71,7 @@ spec:
     command: ["/lifecycle/analyzer"]
     args:
     - "-layers=/layers"
+    - "-analyzed=/layers/analyzed.toml"
     - "-helpers=${USE_CRED_HELPERS}"
     - "-group=/layers/group.toml"
     - "${IMAGE}"
@@ -97,6 +98,7 @@ spec:
     command: ["/lifecycle/exporter"]
     args:
     - "-layers=/layers"
+    - "-analyzed=/layers/analyzed.toml"
     - "-helpers=${USE_CRED_HELPERS}"
     - "-app=/workspace"
     - "-group=/layers/group.toml"
