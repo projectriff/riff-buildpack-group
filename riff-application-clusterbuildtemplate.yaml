@@ -8,7 +8,7 @@ spec:
     description: The image you wish to create. For example, "repo/example", or "example.com/repo/image".
   - name: BUILDER_IMAGE
     description: The builder image (must include v3 lifecycle and compatible buildpacks).
-    default: cloudfoundry/cnb:bionic
+    default: cloudfoundry/cnb:0.0.5-bionic
   - name: USE_CRED_HELPERS
     description: Use Docker credential helpers for Google's GCR, Amazon's ECR, or Microsoft's ACR.
     default: 'false'
