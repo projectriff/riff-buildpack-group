@@ -1,7 +1,7 @@
 buildpacks = [
-  { id = "io.projectriff.java",          latest = true, uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-0.1.5-BUILD-SNAPSHOT-20190722192419-3dd9e2019b5b46c1.tgz" },
-  { id = "io.projectriff.node",          latest = true, uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-0.1.1-BUILD-SNAPSHOT-20190722192400-f433406d8bb38ed8.tgz" },
-  { id = "io.projectriff.command",       latest = true, uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/io.projectriff.command-0.0.9-BUILD-SNAPSHOT-20190722192335-b20f223b1ec44465.tgz" },
+  { id = "io.projectriff.java",          latest = true, uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-$(curl -s https://storage.googleapis.com/projectriff/java-function-buildpack/versions/snapshots/master).tgz" },
+  { id = "io.projectriff.node",          latest = true, uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-$(curl -s https://storage.googleapis.com/projectriff/node-function-buildpack/versions/snapshots/master).tgz" },
+  { id = "io.projectriff.command",       latest = true, uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/io.projectriff.command-$(curl -s https://storage.googleapis.com/projectriff/command-function-buildpack/versions/snapshots/master).tgz" },
   { id = "org.cloudfoundry.openjdk",     latest = true, uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M9/org.cloudfoundry.openjdk-1.0.0-M9.tgz" },
   { id = "org.cloudfoundry.buildsystem", latest = true, uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M9/org.cloudfoundry.buildsystem-1.0.0-M9.tgz" },
   { id = "org.cloudfoundry.node-engine", latest = true, uri = "https://github.com/cloudfoundry/node-engine-cnb/releases/download/v0.0.16/node-engine-cnb-0.0.16.tgz" },
