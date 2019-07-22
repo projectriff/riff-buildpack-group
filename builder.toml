@@ -1,3 +1,4 @@
+# DO NOT EDIT - this file is the output of the 'builder.toml.tpl' template 
 buildpacks = [
   { id = "io.projectriff.java",          latest = true, uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-0.1.5-BUILD-SNAPSHOT-20190722192419-3dd9e2019b5b46c1.tgz" },
   { id = "io.projectriff.node",          latest = true, uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-0.1.1-BUILD-SNAPSHOT-20190722192400-f433406d8bb38ed8.tgz" },
