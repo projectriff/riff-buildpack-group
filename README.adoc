@@ -26,7 +26,7 @@ repository's `builder.toml` file will enhance its group(s) to reference _e.g._ t
 === Prerequisites
 To build the `projectriff/builder` builder you'll need
 
-* Go 1.12+
+* Go 1.13+
 * a running local docker daemon
 * the https://github.com/buildpack/pack[`pack`] command line tool, https://github.com/buildpack/pack/releases[version] `>= 0.2.0`.
 
