@@ -1,8 +1,8 @@
 # DO NOT EDIT - this file is the output of the 'builder.toml.tpl' template 
 buildpacks = [
   { id = "io.projectriff.streaming-http-adapter",           latest = true, uri = "https://storage.googleapis.com/projectriff/streaming-http-adapter-buildpack/io.projectriff.streaming-http-adapter-0.0.1-BUILD-SNAPSHOT-20190819131307-0e01a0f5d5e271b1.tgz" },
-  { id = "io.projectriff.java",                             latest = true, uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-0.2.0-BUILD-SNAPSHOT-20190918151823-d6b17e57cb952c0e.tgz" },
-  { id = "io.projectriff.node",                             latest = true, uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-0.2.0-BUILD-SNAPSHOT-20190918110852-1f11e94cae5e8dc9.tgz" },
+  { id = "io.projectriff.java",                             latest = true, uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-0.2.0-BUILD-SNAPSHOT-20190918162300-946df4d63a1aa277.tgz" },
+  { id = "io.projectriff.node",                             latest = true, uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-0.2.0-BUILD-SNAPSHOT-20190918162633-1f395345ef742344.tgz" },
   { id = "io.projectriff.command",                          latest = true, uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/io.projectriff.command-0.0.10-BUILD-SNAPSHOT-20190904233700-611cb5146bfbf9a0.tgz" },
   { id = "org.cloudfoundry.openjdk",                        latest = true, uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M9/org.cloudfoundry.openjdk-1.0.0-M9.tgz" },
   { id = "org.cloudfoundry.buildsystem",                    latest = true, uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M9/org.cloudfoundry.buildsystem-1.0.0-M9.tgz" },
