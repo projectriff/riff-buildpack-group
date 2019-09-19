@@ -1,6 +1,7 @@
+# DO NOT EDIT - this file is the output of the 'riff-application-clusterbuilder.yaml.tpl' template 
 apiVersion: build.pivotal.io/v1alpha1
 kind: ClusterBuilder
 metadata:
   name: riff-application
 spec:
-  image: cloudfoundry/cnb:0.0.5-bionic
+  image: cloudfoundry/cnb:0.0.24-bionic

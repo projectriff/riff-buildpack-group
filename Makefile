@@ -15,3 +15,4 @@ grab-run-image:
 
 templates:
 	./apply-template.sh builder.toml.tpl builder.toml
+	./apply-template.sh riff-application-clusterbuilder.yaml.tpl riff-application-clusterbuilder.yaml
