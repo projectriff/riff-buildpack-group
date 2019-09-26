@@ -1,39 +1,48 @@
 buildpacks = [
-  { id = "io.projectriff.streaming-http-adapter",           latest = true, uri = "https://storage.googleapis.com/projectriff/streaming-http-adapter-buildpack/io.projectriff.streaming-http-adapter-$(curl -s https://storage.googleapis.com/projectriff/streaming-http-adapter-buildpack/versions/snapshots/master).tgz" },
-  { id = "io.projectriff.java",                             latest = true, uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-$(curl -s https://storage.googleapis.com/projectriff/java-function-buildpack/versions/snapshots/master).tgz" },
-  { id = "io.projectriff.node",                             latest = true, uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-$(curl -s https://storage.googleapis.com/projectriff/node-function-buildpack/versions/snapshots/master).tgz" },
-  { id = "io.projectriff.command",                          latest = true, uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/io.projectriff.command-$(curl -s https://storage.googleapis.com/projectriff/command-function-buildpack/versions/snapshots/master).tgz" },
-  { id = "org.cloudfoundry.openjdk",                        latest = true, uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/openjdk/org.cloudfoundry.openjdk/1.0.0-M9/org.cloudfoundry.openjdk-1.0.0-M9.tgz" },
-  { id = "org.cloudfoundry.buildsystem",                    latest = true, uri = "https://repo.spring.io/libs-milestone-local/org/cloudfoundry/buildsystem/org.cloudfoundry.buildsystem/1.0.0-M9/org.cloudfoundry.buildsystem-1.0.0-M9.tgz" },
-  { id = "org.cloudfoundry.node-engine",                    latest = true, uri = "https://github.com/cloudfoundry/node-engine-cnb/releases/download/v0.0.16/node-engine-cnb-0.0.16.tgz" },
-  { id = "org.cloudfoundry.npm",                            latest = true, uri = "https://github.com/cloudfoundry/npm-cnb/releases/download/v0.0.12/npm-cnb-0.0.12.tgz" },
+  { id = "io.projectriff.command",       uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/io.projectriff.command-$(curl -s https://storage.googleapis.com/projectriff/command-function-buildpack/versions/snapshots/master).tgz" },
+  { id = "io.projectriff.java",          uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-$(curl -s https://storage.googleapis.com/projectriff/java-function-buildpack/versions/snapshots/master).tgz" },
+  { id = "io.projectriff.node",          uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-$(curl -s https://storage.googleapis.com/projectriff/node-function-buildpack/versions/snapshots/master).tgz" },
+
+  { id = "org.cloudfoundry.buildsystem", uri = "https://storage.googleapis.com/cnb-buildpacks/build-system-cnb/org.cloudfoundry.buildsystem-1.0.40.tgz" },
+  { id = "org.cloudfoundry.node-engine", uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.node-engine/org.cloudfoundry.node-engine-0.0.56-any-stack-a47881f8.tgz" },
+  { id = "org.cloudfoundry.npm",         uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.npm/org.cloudfoundry.npm-0.0.33-any-stack-07c7a3d5.tgz" },
+  { id = "org.cloudfoundry.openjdk",     uri = "https://storage.googleapis.com/cnb-buildpacks/openjdk-cnb/org.cloudfoundry.openjdk-1.0.19.tgz" },
+  { id = "org.cloudfoundry.yarn",        uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.yarn/org.cloudfoundry.yarn-0.0.33-any-stack-de797152.tgz" },
 ]
 
-[[groups]]
-  # java functions
-  buildpacks = [
-    { id = "org.cloudfoundry.openjdk",              version = "latest", optional = true },
-    { id = "org.cloudfoundry.buildsystem",          version = "latest", optional = true },
-    { id = "io.projectriff.streaming-http-adapter", version = 'latest', optional = true },
-    { id = "io.projectriff.java",                   version = "latest" },
-  ]
+[[order]]
+group = [
+  { id = "org.cloudfoundry.openjdk" },
+  { id = "org.cloudfoundry.buildsystem", optional = true },
+  { id = "io.projectriff.java" },
+]
 
-[[groups]]
-  # node functions
-  buildpacks = [
-    { id = "org.cloudfoundry.node-engine",          version = "latest", optional = true },
-    { id = "org.cloudfoundry.npm",                  version = "latest", optional = true },
-    { id = "io.projectriff.streaming-http-adapter", version = 'latest', optional = true },
-    { id = "io.projectriff.node",                   version = "latest" },
-  ]
+[[order]]
+group = [
+  { id = "org.cloudfoundry.node-engine" },
+  { id = "org.cloudfoundry.npm" },
+  { id = "io.projectriff.node" },
+]
 
-[[groups]]
-  # command functions
-  buildpacks = [
-    { id = "io.projectriff.command", version = "latest" },
-  ]
+[[order]]
+group = [
+  { id = "org.cloudfoundry.node-engine" },
+  { id = "org.cloudfoundry.yarn" },
+  { id = "io.projectriff.node" },
+]
+
+[[order]]
+group = [
+  { id = "org.cloudfoundry.node-engine" },
+  { id = "io.projectriff.node" },
+]
+
+[[order]]
+group = [
+ { id = "io.projectriff.command" },
+]
 
 [stack]
-  id = "io.buildpacks.stacks.bionic"
-  build-image = "cnbs/build"
-  run-image = "cnbs/run"
+id          = "io.buildpacks.stacks.bionic"
+build-image = "cloudfoundry/build:base-cnb"
+run-image   = "cloudfoundry/run:base-cnb"

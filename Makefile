@@ -10,8 +10,8 @@ test: grab-run-image
 	GO111MODULE=on go test -v -tags=acceptance ./acceptance
 
 grab-run-image:
-	docker pull cnbs/build
-	docker pull cnbs/run
+	docker pull cloudfoundry/build:base-cnb
+	docker pull cloudfoundry/run:base-cnb
 
 templates:
 	./apply-template.sh builder.toml.tpl builder.toml
