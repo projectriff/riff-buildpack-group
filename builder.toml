@@ -1,7 +1,7 @@
 # DO NOT EDIT - this file is the output of the 'builder.toml.tpl' template 
 buildpacks = [
   { id = "io.projectriff.command",       uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/io.projectriff.command-0.0.10-BUILD-SNAPSHOT-20190926193241-ba6b10d86fec32d9.tgz" },
-  { id = "io.projectriff.java",          uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-0.2.0-BUILD-SNAPSHOT-20190926193131-7b446588c46b9198.tgz" },
+  { id = "io.projectriff.java",          uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-0.2.0-BUILD-SNAPSHOT-20191002145441-b1a4d25a18a8001d.tgz" },
   { id = "io.projectriff.node",          uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-0.2.0-BUILD-SNAPSHOT-20190926193208-a2b6c79049ba92f1.tgz" },
 
   { id = "org.cloudfoundry.buildsystem", uri = "https://storage.googleapis.com/cnb-buildpacks/build-system-cnb/org.cloudfoundry.buildsystem-1.0.40.tgz" },
