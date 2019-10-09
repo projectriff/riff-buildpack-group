@@ -1,0 +1,53 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-go@v1
+      with:
+        go-version: '1.13'
+    - name: Install pack
+      run: .github/workflows/install-pack.sh
+    - name: Create Builder
+      run: .github/workflows/create-builder.sh
+    - name: Test Builder
+      run: make test
+
+  publish:
+    needs: test
+    if: |
+      github.event_name == 'push' && (
+        github.ref == 'refs/heads/master' || (
+          startsWith(github.ref, 'refs/heads/v') && endsWith(github.ref, 'x')
+        )
+      )
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-go@v1
+      with:
+        go-version: '1.13'
+    - name: Install pack
+      run: .github/workflows/install-pack.sh
+    - name: Create Builder
+      run: .github/workflows/create-builder.sh
+    - name: gcloud auth
+      run: |
+        gcloud config set disable_prompts True
+        gcloud auth activate-service-account --key-file <(echo $GCLOUD_CLIENT_SECRET | base64 --decode)
+      env:
+        GCLOUD_CLIENT_SECRET: ${{ secrets.GCLOUD_CLIENT_SECRET }}
+    - name: docker login
+      run: docker login -u "${DOCKER_USERNAME}" -p "${DOCKER_PASSWORD}"
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+    - name: Publish Image
+      run: .github/workflows/push-to-dockerhub.sh ${{ github.ref }}
+    - name: Publish Builder
+      run: .github/workflows/push-buildtemplate-to-gcs.sh ${{ github.ref }}
