@@ -3,4 +3,4 @@ kind: ClusterBuilder
 metadata:
   name: riff-application
 spec:
-  image: cloudfoundry/cnb:`curl https://hub.docker.com/v2/repositories/cloudfoundry/cnb/tags | jq -r '.results[].name' | grep '\-bionic' | head -1`
+  image: cloudfoundry/cnb:{{ curl -s https://hub.docker.com/v2/repositories/cloudfoundry/cnb/tags | jq -r '.results[].name' | grep -- -bionic | head -1 }} 

@@ -1,9 +1,9 @@
 .PHONY: build build-dev test grab-run-image templates
 
-build:
+build: builder.toml
 	pack create-builder -b builder.toml projectriff/builder
 
-build-dev:
+build-dev: builder-dev.toml
 	pack create-builder -b builder-dev.toml projectriff/builder
 
 test: grab-run-image
@@ -13,6 +13,16 @@ grab-run-image:
 	docker pull cloudfoundry/build:base-cnb
 	docker pull cloudfoundry/run:base-cnb
 
+builder.toml: builder.toml.tpl go.mod
+	./ci/apply-template.sh builder.toml.tpl > builder.toml
+
+builder-dev.toml: builder-dev.toml.tpl go.mod
+	./ci/apply-template.sh builder-dev.toml.tpl > builder-dev.toml
+
+clean:
+	rm builder.toml
+	rm builder-dev.toml
+
 templates:
-	./apply-template.sh builder.toml.tpl builder.toml
-	./apply-template.sh riff-application-clusterbuilder.yaml.tpl riff-application-clusterbuilder.yaml
+	./ci/apply-template.sh builder.toml.tpl.tpl > builder.toml.tpl
+	./ci/apply-template.sh riff-application-clusterbuilder.yaml.tpl > riff-application-clusterbuilder.yaml

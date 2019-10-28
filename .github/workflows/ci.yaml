@@ -19,7 +19,7 @@ jobs:
     - name: Install pack
       run: .github/workflows/install-pack.sh
     - name: Create Builder
-      run: .github/workflows/create-builder.sh
+      run: make build
     - name: Test Builder
       run: make test
 
@@ -40,7 +40,7 @@ jobs:
     - name: Install pack
       run: .github/workflows/install-pack.sh
     - name: Create Builder
-      run: .github/workflows/create-builder.sh
+      run: make build
     - name: gcloud auth
       run: |
         gcloud config set disable_prompts True
