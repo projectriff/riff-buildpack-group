@@ -33,6 +33,7 @@ github.com/cloudfoundry/build-system-cnb v1.0.118 h1:xqmItJFnc5aOuCHl3qLwOLzqz53
 github.com/cloudfoundry/build-system-cnb v1.0.118/go.mod h1:kK23K2xq1VfrBJk704DhtadHFleKgRPjB1eVNTJAq3k=
 github.com/cloudfoundry/dagger v0.0.0-20191016144449-e21676fc28c9/go.mod h1:xqRl2xy0Q75hzZXM/Cv2DZNl7OIzaT/6JOy8TZbb4yk=
 github.com/cloudfoundry/dagger v0.0.0-20191025181811-15ebd2408e87/go.mod h1:xqRl2xy0Q75hzZXM/Cv2DZNl7OIzaT/6JOy8TZbb4yk=
+github.com/cloudfoundry/dagger v0.0.0-20191104213644-af89c350c4a1/go.mod h1:xqRl2xy0Q75hzZXM/Cv2DZNl7OIzaT/6JOy8TZbb4yk=
 github.com/cloudfoundry/jvm-application-cnb v1.0.66 h1:OtcDjRmvvdobeQJCk5qp6jH7jBe5rW6blUT8oh67o4g=
 github.com/cloudfoundry/jvm-application-cnb v1.0.66/go.mod h1:YbPazNZH3XgMtK35SAC+11cm6au4JxHe47zKaWwnQ2A=
 github.com/cloudfoundry/jvm-application-cnb v1.0.75/go.mod h1:9tE7+rJBXkCHT5YdXgkcK5Ad/rmyqN+p2SRi8ow/x8s=
@@ -53,6 +54,8 @@ github.com/cloudfoundry/npm-cnb v0.0.53 h1:+WX+x6lFfiPpXCV92GVwe7UpxE9KZM3aas1Qm
 github.com/cloudfoundry/npm-cnb v0.0.53/go.mod h1:SFB8Qp5FwPi9NG+k5XeQ1FVjGTYx8kDn+5p/aAvaugU=
 github.com/cloudfoundry/npm-cnb v0.0.55 h1:vzNSZEoE7ajrSBFQ0CbER3h/xwnkU+LXNqCsDnsdifs=
 github.com/cloudfoundry/npm-cnb v0.0.55/go.mod h1:myaDWA2jV9RzTXh01jbaEdSSis25oGr3FTEsMafDiy0=
+github.com/cloudfoundry/npm-cnb v0.0.57 h1:U5btnXNG1hxAmlAzhYJroLHTOnLw4x/LqxNoiGYnUHE=
+github.com/cloudfoundry/npm-cnb v0.0.57/go.mod h1:0Q//af6jODM+JLwOmuhAGNhGk3KvIdEQE2XRuFFR7Cc=
 github.com/cloudfoundry/openjdk-cnb v1.0.48 h1:uHYMijtgGf4ydMFhZ46qEpbhjo6WmM8Dk0d1pQTwyMw=
 github.com/cloudfoundry/openjdk-cnb v1.0.48/go.mod h1:WRg+F3SV4DbFWMV5C+VZCujsw44fwJ5P5+qWzwvUduY=
 github.com/cloudfoundry/openjdk-cnb v1.0.54/go.mod h1:3Hsf6HGsALSTgrcSznO7fneJrbKvf1Cqcj8UUCKyYHc=
