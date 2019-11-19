@@ -94,6 +94,8 @@ github.com/cloudfoundry/npm-cnb v0.0.63 h1:b+EJCpcXvQzQISnGuMaAqdeS/0LD+p+T4GKE4
 github.com/cloudfoundry/npm-cnb v0.0.63/go.mod h1:uejNNPL3e5uwkF5mMNKE716DLkkfrzMk3lwdAorcwwI=
 github.com/cloudfoundry/npm-cnb v0.0.64 h1:8bzMYwqR7fkdSfJWK6fKC6fx7SvJXJflnSQHYm685dU=
 github.com/cloudfoundry/npm-cnb v0.0.64/go.mod h1:bHCxYSgbvJa8tdBHdni48p1QmxmeKS1tD+naHX7XEAM=
+github.com/cloudfoundry/npm-cnb v0.0.65 h1:ArJExG9ZgBBZQJohi4Q+rd3vhHL8RoD1RsaPSx9cvy4=
+github.com/cloudfoundry/npm-cnb v0.0.65/go.mod h1:bHCxYSgbvJa8tdBHdni48p1QmxmeKS1tD+naHX7XEAM=
 github.com/cloudfoundry/openjdk-cnb v1.0.48 h1:uHYMijtgGf4ydMFhZ46qEpbhjo6WmM8Dk0d1pQTwyMw=
 github.com/cloudfoundry/openjdk-cnb v1.0.48/go.mod h1:WRg+F3SV4DbFWMV5C+VZCujsw44fwJ5P5+qWzwvUduY=
 github.com/cloudfoundry/openjdk-cnb v1.0.54/go.mod h1:3Hsf6HGsALSTgrcSznO7fneJrbKvf1Cqcj8UUCKyYHc=
