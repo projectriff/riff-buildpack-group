@@ -62,6 +62,7 @@ github.com/cloudfoundry/libcfbuildpack v1.91.2/go.mod h1:MmVyN2ZbxoWcuJ3cK5HVQWw
 github.com/cloudfoundry/libcfbuildpack v1.91.3/go.mod h1:oHi1a/+zLoZPtxOR62SZLp0rZ/bYJ2Xp85gsoxBeYEM=
 github.com/cloudfoundry/libcfbuildpack v1.91.4/go.mod h1:1W3acvFCrUAnYOHZSVoRtxVAiSFKYatBZExvEyHgYPk=
 github.com/cloudfoundry/libcfbuildpack v1.91.5/go.mod h1:1MNxSTA5EPAollt+rVyNxZQQe1yTRdVEVK7iJCkRruU=
+github.com/cloudfoundry/libcfbuildpack v1.91.6/go.mod h1:JDfXiPrAxOSloD/ATho1CKh2UnM+sRgfPq6q0o02TvU=
 github.com/cloudfoundry/node-engine-cnb v0.0.85 h1:gS3s39vHxwYnnPw+XADVTKiu/rqX3zCRqxt//g6ZMp4=
 github.com/cloudfoundry/node-engine-cnb v0.0.85/go.mod h1:PhkqfY0KpH5TiKOPr4ROaHHxer4dfmnJmxcLZL2VFuA=
 github.com/cloudfoundry/node-engine-cnb v0.0.89 h1:7x8uZsprlajkZR12987zHIAqNbXkPy0GmRFP8pu9vLk=
@@ -80,6 +81,8 @@ github.com/cloudfoundry/node-engine-cnb v0.0.102 h1:XalM9j0KTZPOfWfKhpziK7BFTc3J
 github.com/cloudfoundry/node-engine-cnb v0.0.102/go.mod h1:R74sHmNT4tj0wtPXgsEUoWn+7hujznDdi7BNxSZ5gkE=
 github.com/cloudfoundry/node-engine-cnb v0.0.103 h1:vvNzk85z6ZUzeK8WhNvhfxVfRVPEHyLk+nrUKFvR7gs=
 github.com/cloudfoundry/node-engine-cnb v0.0.103/go.mod h1:Z2dkcVnhdD6rp9IH/g6TvikTk3jScFFAN4uY/eb9cC8=
+github.com/cloudfoundry/node-engine-cnb v0.0.106 h1:c9u8CxqMFoAYWOYpJdDkjHeoVnV7Mdf2oVVLIyeKp9E=
+github.com/cloudfoundry/node-engine-cnb v0.0.106/go.mod h1:S/BIAH4OEGo3zA/zN25+uUP7EBNioFehDvTlVNYsrV8=
 github.com/cloudfoundry/npm-cnb v0.0.51 h1:GDOgvCYqCLb8SHy7iqh7N0h8ZEHfV38hBJ0dHUiGylY=
 github.com/cloudfoundry/npm-cnb v0.0.51/go.mod h1:guXWeOQUxtIgDcj5nbq15K7YO/CJmrKfyjcPI56VcnI=
 github.com/cloudfoundry/npm-cnb v0.0.53 h1:+WX+x6lFfiPpXCV92GVwe7UpxE9KZM3aas1QmzFSjoY=
@@ -213,6 +216,7 @@ golang.org/x/net v0.0.0-20191028085509-fe3aa8a45271/go.mod h1:z5CRVTTTmAJ677TzLL
 golang.org/x/net v0.0.0-20191101175033-0deb6923b6d9/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
 golang.org/x/net v0.0.0-20191105084925-a882066a44e0/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
 golang.org/x/net v0.0.0-20191112182307-2180aed22343/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
+golang.org/x/net v0.0.0-20191119073136-fc4aabc6c914/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
 golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be/go.mod h1:N/0e6XlmueqKjAGxoOufVs8QHGRruUQn6yWY3a++T0U=
 golang.org/x/oauth2 v0.0.0-20190226205417-e64efc72b421/go.mod h1:gOpvHmFTYa4IltrdGE7lF6nIHvwfUNPOp7c8zoXwtLw=
 golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45 h1:SVwTIAaPC2U/AvvLNZ2a7OVsmBpC8L5BlwK1whH3hm0=
@@ -248,6 +252,7 @@ golang.org/x/sys v0.0.0-20191104094858-e8c54fb511f6/go.mod h1:h1NjWce9XRLGQEsW7w
 golang.org/x/sys v0.0.0-20191105142833-ac3223d80179/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20191113165036-4c7a9d0fe056/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20191115151921-52ab43148777/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20191119060738-e882bf8e40c2/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.2 h1:tW2bmiBqwgJj/UpqtC8EpXEZVYOwU0yG4iWbprSVAcs=
@@ -312,6 +317,7 @@ gopkg.in/yaml.v2 v2.2.3/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.2.4 h1:/eiJrUcujPVeJ3xlSWaiNi3uSVmDGBK1pDHUHAnao1I=
 gopkg.in/yaml.v2 v2.2.4/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.2.5/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
+gopkg.in/yaml.v2 v2.2.6/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 honnef.co/go/tools v0.0.0-20190102054323-c2f93a96b099/go.mod h1:rf3lG4BRIbNafJWhAfAdb/ePZxsR/4RtNHQocxwk9r4=
 honnef.co/go/tools v0.0.0-20190106161140-3f1c8253044a/go.mod h1:rf3lG4BRIbNafJWhAfAdb/ePZxsR/4RtNHQocxwk9r4=
 honnef.co/go/tools v0.0.0-20190418001031-e561f6794a2a/go.mod h1:rf3lG4BRIbNafJWhAfAdb/ePZxsR/4RtNHQocxwk9r4=
