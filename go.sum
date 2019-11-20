@@ -108,6 +108,8 @@ github.com/cloudfoundry/openjdk-cnb v1.0.48/go.mod h1:WRg+F3SV4DbFWMV5C+VZCujsw4
 github.com/cloudfoundry/openjdk-cnb v1.0.54/go.mod h1:3Hsf6HGsALSTgrcSznO7fneJrbKvf1Cqcj8UUCKyYHc=
 github.com/cloudfoundry/openjdk-cnb v1.0.56/go.mod h1:2OKiDVaNE/lUpC4kr3FY8lCeoWGEIyxuVurxA0RCq2s=
 github.com/cloudfoundry/openjdk-cnb v1.0.57/go.mod h1:WKdN8b/98F9gD5IZSOLzIDw6PaEMiz4W/ydhimU+8vE=
+github.com/cloudfoundry/openjdk-cnb v1.0.59 h1:Hu9XPlHfzRRDPI2Bx8S54zhyPa6Q4rQ5rRam7an2XGU=
+github.com/cloudfoundry/openjdk-cnb v1.0.59/go.mod h1:ustqDlyGGqLNC1PT+ixsVpTzfX3oImdCTaQKrtUwrSc=
 github.com/cloudfoundry/packit v0.0.0-20191014140300-f8d2e0b20a04/go.mod h1:m8hk5BTIclmOWMxv3aQKIU/0LA4FVe4XKC9o0VNsLow=
 github.com/fatih/color v1.7.0 h1:DkWD4oS2D8LGGgTQ6IvwJJXSL5Vp2ffcQg58nFV38Ys=
 github.com/fatih/color v1.7.0/go.mod h1:Zm6kSWBoL9eyXnKyktHP6abPY2pDugNf5KwzbycvMj4=
