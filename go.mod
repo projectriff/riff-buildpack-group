@@ -6,6 +6,6 @@ require (
 	github.com/cloudfoundry/build-system-cnb v1.0.138
 	github.com/cloudfoundry/node-engine-cnb v0.0.115
 	github.com/cloudfoundry/npm-cnb v0.0.70
-	github.com/cloudfoundry/openjdk-cnb v1.0.48
+	github.com/cloudfoundry/openjdk-cnb v1.0.61
 	github.com/projectriff/libfnbuildpack v0.3.0
 )
