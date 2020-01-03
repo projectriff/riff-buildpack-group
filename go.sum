@@ -23,13 +23,17 @@ github.com/buildpack/libbuildpack v1.24.5/go.mod h1:cBmq8aozSDfy+RiKCERQbT6lk0M/
 github.com/buildpack/libbuildpack v1.25.7/go.mod h1:9WwFxe8UUWFyC4+CQxt5poscEryVm8KQaSJdgms7iGk=
 github.com/buildpack/libbuildpack v1.25.8 h1:k7V5ArMvaioh5fCPsxvJ1Q5Svb5rIt6E3E5h9cxkoSc=
 github.com/buildpack/libbuildpack v1.25.8/go.mod h1:l4/s95NP96DffC5A+U7ezwqCF9JNGTnoagqeB+dimSQ=
+github.com/buildpack/libbuildpack v1.25.9/go.mod h1:SAar5bFlgGoIk0umOpPyl5XvnWt4gFVbvKsLmdIPnS4=
 github.com/cheggaaa/pb v2.0.7+incompatible/go.mod h1:pQciLPpbU0oxA0h+VJYYLxO+XeDQb5pZijXscXHm81s=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
 github.com/cloudfoundry/build-system-cnb v1.0.162 h1:cnIbdl/xp4y059mTYF7WL3Ry/I2NFjSKihacm2Usjn0=
 github.com/cloudfoundry/build-system-cnb v1.0.162/go.mod h1:1L9rpYIs0wawfB79T9aetwTdGGhUPBDiLFxCPA512EQ=
+github.com/cloudfoundry/build-system-cnb v1.0.171 h1:RzxlN7jS31UIbSkEBpl2+66yh5fv2ONQVQQ3VRg6ve0=
+github.com/cloudfoundry/build-system-cnb v1.0.171/go.mod h1:mAHS8dTXYV+r9ZBh0Fi9IziNYXaDFZazCjaEEjQsAXY=
 github.com/cloudfoundry/dagger v0.0.0-20191213212648-a45390236bb7/go.mod h1:PiNRNPj6nYimhASeft5kCrRhXzyKeqfkP9Wg+/7NivA=
 github.com/cloudfoundry/jvm-application-cnb v1.0.99 h1:j3GtOsLslRgx7wqYY5kCYjp1XBXLZUUw08DLoii85SI=
 github.com/cloudfoundry/jvm-application-cnb v1.0.99/go.mod h1:THc8owA5kbX04cSmQNwraaMhb3eI1Gr6W/Za602ty94=
+github.com/cloudfoundry/jvm-application-cnb v1.0.103/go.mod h1:ISTSLk0Z1/Tp6//BpU0MauaTriV5YT7gwJhmRBH6POg=
 github.com/cloudfoundry/libcfbuildpack v1.87.2/go.mod h1:u4rY3hScjPQg0o9TFSoXsPShiuQIqNRmAoXzQ2qPdsw=
 github.com/cloudfoundry/libcfbuildpack v1.89.0/go.mod h1:ufhp/bp0LxbDDwbf2Ms3Bf4x9YnLr9dkL1RTUYSdKg0=
 github.com/cloudfoundry/libcfbuildpack v1.91.11/go.mod h1:3LGlIqcmqoCn2IvcnmVJrX7e9UfsMazlXE7ovsVR9YE=
@@ -37,6 +41,7 @@ github.com/cloudfoundry/libcfbuildpack v1.91.12/go.mod h1:4F4p49m8VgNOa4B2iYv63K
 github.com/cloudfoundry/libcfbuildpack v1.91.13 h1:Opm+/pD3Mxzv0suCijEuQGwSZk2b9TYBl/ypMxIkRZk=
 github.com/cloudfoundry/libcfbuildpack v1.91.13/go.mod h1:w2sZDJ33eE67rvPsxoY4QzcFgO3N3p3fY63UuZo72Ds=
 github.com/cloudfoundry/libcfbuildpack v1.91.15/go.mod h1:mf2z0yl6DJWd1aVL0O+oJpKl90k2K5iG4iS/02Blafk=
+github.com/cloudfoundry/libcfbuildpack v1.91.16/go.mod h1:hoAcV8yAsfkkMPikDuhDhx/2WGegFrsmGQoVqie23dE=
 github.com/cloudfoundry/node-engine-cnb v0.0.126 h1:OPHUcesfF/2ETWuUyUU37cnid+ogTdhWQo+MrnQNgRk=
 github.com/cloudfoundry/node-engine-cnb v0.0.126/go.mod h1:V5HEaZvShMkLsA8mximwuY7upQQM0ZcDux9uzpxxRE4=
 github.com/cloudfoundry/node-engine-cnb v0.0.129 h1:kKPF7lF3xBVXwa6nOpaXGTln2MDpEnojpyS68cKDxIg=
@@ -47,6 +52,7 @@ github.com/cloudfoundry/npm-cnb v0.0.77 h1:7MiLoN7MwxEiOs0iVHGA3sJlIf6oaPTR0Tb8z
 github.com/cloudfoundry/npm-cnb v0.0.77/go.mod h1:gD4p8aYZkzLIeHEatO+s/BsdNtQBho+PvYti0/hOisY=
 github.com/cloudfoundry/openjdk-cnb v1.0.70 h1:RvalUFKWwN6cGZlzv8lU6/SKm2PemwqPJQYHG+rnwpw=
 github.com/cloudfoundry/openjdk-cnb v1.0.70/go.mod h1:X+R+rSnIKH05gNJOiwZsPRRq9XV2WqljEoGT/BOIhGk=
+github.com/cloudfoundry/openjdk-cnb v1.0.73/go.mod h1:D1myXlLgkwVcNt/8S80GD9cAsUZne06CpVLy2evztw0=
 github.com/cloudfoundry/packit v0.0.0-20191202164725-43d6fa19d96c/go.mod h1:FffmDGXYVSrrj9HlFP4XbnJnQi7jHcsElHujPGbfP3U=
 github.com/fatih/color v1.7.0 h1:DkWD4oS2D8LGGgTQ6IvwJJXSL5Vp2ffcQg58nFV38Ys=
 github.com/fatih/color v1.7.0/go.mod h1:Zm6kSWBoL9eyXnKyktHP6abPY2pDugNf5KwzbycvMj4=
@@ -204,6 +210,7 @@ golang.org/x/sys v0.0.0-20191026070338-33540a1f6037/go.mod h1:h1NjWce9XRLGQEsW7w
 golang.org/x/sys v0.0.0-20191218084908-4a24b4065292 h1:Y8q0zsdcgAd+JU8VUA8p8Qv2YhuY9zevDG2ORt5qBUI=
 golang.org/x/sys v0.0.0-20191218084908-4a24b4065292/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20191228213918-04cbcbbfeed8/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20200102141924-c96a22e43c9c/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.2 h1:tW2bmiBqwgJj/UpqtC8EpXEZVYOwU0yG4iWbprSVAcs=
