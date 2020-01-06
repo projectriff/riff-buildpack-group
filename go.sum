@@ -31,10 +31,13 @@ github.com/cloudfoundry/build-system-cnb v1.0.162 h1:cnIbdl/xp4y059mTYF7WL3Ry/I2
 github.com/cloudfoundry/build-system-cnb v1.0.162/go.mod h1:1L9rpYIs0wawfB79T9aetwTdGGhUPBDiLFxCPA512EQ=
 github.com/cloudfoundry/build-system-cnb v1.0.171 h1:RzxlN7jS31UIbSkEBpl2+66yh5fv2ONQVQQ3VRg6ve0=
 github.com/cloudfoundry/build-system-cnb v1.0.171/go.mod h1:mAHS8dTXYV+r9ZBh0Fi9IziNYXaDFZazCjaEEjQsAXY=
+github.com/cloudfoundry/build-system-cnb v1.0.181 h1:8qjz0tSIN7oykydb4iVpmK/6Qdc4y32BV+LXLNoHitY=
+github.com/cloudfoundry/build-system-cnb v1.0.181/go.mod h1:7f3uNN4Lb5B3nAU2RyTK+gCSGebJYO1NyA/3fECK9Qo=
 github.com/cloudfoundry/dagger v0.0.0-20191213212648-a45390236bb7/go.mod h1:PiNRNPj6nYimhASeft5kCrRhXzyKeqfkP9Wg+/7NivA=
 github.com/cloudfoundry/jvm-application-cnb v1.0.99 h1:j3GtOsLslRgx7wqYY5kCYjp1XBXLZUUw08DLoii85SI=
 github.com/cloudfoundry/jvm-application-cnb v1.0.99/go.mod h1:THc8owA5kbX04cSmQNwraaMhb3eI1Gr6W/Za602ty94=
 github.com/cloudfoundry/jvm-application-cnb v1.0.103/go.mod h1:ISTSLk0Z1/Tp6//BpU0MauaTriV5YT7gwJhmRBH6POg=
+github.com/cloudfoundry/jvm-application-cnb v1.0.110/go.mod h1:xYnKcd1JNiSjPFIXjjRyQhWsubyuIT/hUnu1NX6b6O4=
 github.com/cloudfoundry/libcfbuildpack v1.87.2/go.mod h1:u4rY3hScjPQg0o9TFSoXsPShiuQIqNRmAoXzQ2qPdsw=
 github.com/cloudfoundry/libcfbuildpack v1.89.0/go.mod h1:ufhp/bp0LxbDDwbf2Ms3Bf4x9YnLr9dkL1RTUYSdKg0=
 github.com/cloudfoundry/libcfbuildpack v1.91.11/go.mod h1:3LGlIqcmqoCn2IvcnmVJrX7e9UfsMazlXE7ovsVR9YE=
@@ -43,6 +46,7 @@ github.com/cloudfoundry/libcfbuildpack v1.91.13 h1:Opm+/pD3Mxzv0suCijEuQGwSZk2b9
 github.com/cloudfoundry/libcfbuildpack v1.91.13/go.mod h1:w2sZDJ33eE67rvPsxoY4QzcFgO3N3p3fY63UuZo72Ds=
 github.com/cloudfoundry/libcfbuildpack v1.91.15/go.mod h1:mf2z0yl6DJWd1aVL0O+oJpKl90k2K5iG4iS/02Blafk=
 github.com/cloudfoundry/libcfbuildpack v1.91.16/go.mod h1:hoAcV8yAsfkkMPikDuhDhx/2WGegFrsmGQoVqie23dE=
+github.com/cloudfoundry/libcfbuildpack v1.91.18/go.mod h1:hoAcV8yAsfkkMPikDuhDhx/2WGegFrsmGQoVqie23dE=
 github.com/cloudfoundry/libcfbuildpack v1.91.19/go.mod h1:LLXPiEr7YjuU4sx0lHNBeg8cnWImlwtUSKUOp5tLN6U=
 github.com/cloudfoundry/node-engine-cnb v0.0.126 h1:OPHUcesfF/2ETWuUyUU37cnid+ogTdhWQo+MrnQNgRk=
 github.com/cloudfoundry/node-engine-cnb v0.0.126/go.mod h1:V5HEaZvShMkLsA8mximwuY7upQQM0ZcDux9uzpxxRE4=
@@ -57,6 +61,7 @@ github.com/cloudfoundry/npm-cnb v0.0.79/go.mod h1:W6W7lt+QeEwZWKY9OBpAKG9X3nwXQR
 github.com/cloudfoundry/openjdk-cnb v1.0.70 h1:RvalUFKWwN6cGZlzv8lU6/SKm2PemwqPJQYHG+rnwpw=
 github.com/cloudfoundry/openjdk-cnb v1.0.70/go.mod h1:X+R+rSnIKH05gNJOiwZsPRRq9XV2WqljEoGT/BOIhGk=
 github.com/cloudfoundry/openjdk-cnb v1.0.73/go.mod h1:D1myXlLgkwVcNt/8S80GD9cAsUZne06CpVLy2evztw0=
+github.com/cloudfoundry/openjdk-cnb v1.0.77/go.mod h1:/Vst8oayp1kEG6GUk1lea9xTbE2betv5AYqZTiwfv+I=
 github.com/cloudfoundry/openjdk-cnb v1.0.79 h1:mjJEj93YXynZ7ms5+CteJDXWcUPxKH8SSUV0H2aDVbo=
 github.com/cloudfoundry/openjdk-cnb v1.0.79/go.mod h1:1rstHiyUvziyXBH9SaD1BiODSTIyS3WsAQVtu0kO0Dw=
 github.com/cloudfoundry/packit v0.0.0-20191202164725-43d6fa19d96c/go.mod h1:FffmDGXYVSrrj9HlFP4XbnJnQi7jHcsElHujPGbfP3U=
