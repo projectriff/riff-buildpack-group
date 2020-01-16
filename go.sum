@@ -80,6 +80,8 @@ github.com/cloudfoundry/openjdk-cnb v1.0.79 h1:mjJEj93YXynZ7ms5+CteJDXWcUPxKH8SS
 github.com/cloudfoundry/openjdk-cnb v1.0.79/go.mod h1:1rstHiyUvziyXBH9SaD1BiODSTIyS3WsAQVtu0kO0Dw=
 github.com/cloudfoundry/openjdk-cnb v1.0.80/go.mod h1:GiaPXlN91viQPt8tw/u3NarNYpK1Tu093EZ5J1wCHtM=
 github.com/cloudfoundry/openjdk-cnb v1.0.84/go.mod h1:5T0GTLQ9xf+tCxOr7BrUesZkRhqA/KUMt13DgjAdxyo=
+github.com/cloudfoundry/openjdk-cnb v1.0.86 h1:/ket7QERV9t7srl3Pt6FkZxNbOX4YSyoXmvGwWo9/ZA=
+github.com/cloudfoundry/openjdk-cnb v1.0.86/go.mod h1:5T0GTLQ9xf+tCxOr7BrUesZkRhqA/KUMt13DgjAdxyo=
 github.com/cloudfoundry/packit v0.0.0-20191202164725-43d6fa19d96c/go.mod h1:FffmDGXYVSrrj9HlFP4XbnJnQi7jHcsElHujPGbfP3U=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/envoyproxy/go-control-plane v0.9.1-0.20191026205805-5f8ba28d4473/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
