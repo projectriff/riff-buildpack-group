@@ -4,7 +4,7 @@ go 1.13
 
 require (
 	github.com/cloudfoundry/build-system-cnb v1.0.203
-	github.com/cloudfoundry/node-engine-cnb v0.0.139
+	github.com/cloudfoundry/node-engine-cnb v0.0.142
 	github.com/cloudfoundry/npm-cnb v0.0.86
 	github.com/cloudfoundry/openjdk-cnb v1.0.86
 	github.com/projectriff/libfnbuildpack v0.3.0
