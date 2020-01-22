@@ -95,6 +95,8 @@ github.com/cloudfoundry/openjdk-cnb v1.0.84/go.mod h1:5T0GTLQ9xf+tCxOr7BrUesZkRh
 github.com/cloudfoundry/openjdk-cnb v1.0.86 h1:/ket7QERV9t7srl3Pt6FkZxNbOX4YSyoXmvGwWo9/ZA=
 github.com/cloudfoundry/openjdk-cnb v1.0.86/go.mod h1:5T0GTLQ9xf+tCxOr7BrUesZkRhqA/KUMt13DgjAdxyo=
 github.com/cloudfoundry/openjdk-cnb v1.0.88/go.mod h1:5T0GTLQ9xf+tCxOr7BrUesZkRhqA/KUMt13DgjAdxyo=
+github.com/cloudfoundry/openjdk-cnb v1.0.90 h1:2GqQ+nwnVlo7EkL6GzNNzQ682QcnMPULu1i3JUdmXZ8=
+github.com/cloudfoundry/openjdk-cnb v1.0.90/go.mod h1:5T0GTLQ9xf+tCxOr7BrUesZkRhqA/KUMt13DgjAdxyo=
 github.com/cloudfoundry/packit v0.0.0-20191202164725-43d6fa19d96c/go.mod h1:FffmDGXYVSrrj9HlFP4XbnJnQi7jHcsElHujPGbfP3U=
 github.com/cloudfoundry/packit v0.0.0-20200114205204-249189c06cb9/go.mod h1:FBe0GK9B8hkfQeyD5UzrGz0j115H+OH7L3Yc/EuDunI=
 github.com/cloudfoundry/packit v0.0.0-20200117181238-c9fbc0a623ec/go.mod h1:p3aFtVhY7pMoXsIrp8vTk01FYaFebTURk5KYae5/Nnw=
