@@ -79,6 +79,8 @@ github.com/cloudfoundry/node-engine-cnb v0.0.139 h1:R6gjFwAJ+grgo8SWzpW2SsTerE58
 github.com/cloudfoundry/node-engine-cnb v0.0.139/go.mod h1:uVOtog2tvwy8HmPJSgeWOJMWg7w8sa+0hPJPvG2rn3E=
 github.com/cloudfoundry/node-engine-cnb v0.0.142 h1:mCTX5HvqB6OSQHtseV1Qe2mgMIpZ+PaKQ35/V1m42/0=
 github.com/cloudfoundry/node-engine-cnb v0.0.142/go.mod h1:SDCPH2MLjaulQIff2upxsviRJM8hUqG0OcqIOzR0pP0=
+github.com/cloudfoundry/node-engine-cnb v0.0.143 h1:pGc9uMwWjyxTuLIT60hCNv1X6bTqRaPqqVP9sM3LBS0=
+github.com/cloudfoundry/node-engine-cnb v0.0.143/go.mod h1:SDCPH2MLjaulQIff2upxsviRJM8hUqG0OcqIOzR0pP0=
 github.com/cloudfoundry/npm-cnb v0.0.82 h1:QK7uz26wscuQ79ihQGHImdwb2zpP4yWUkT5uhVGDyvI=
 github.com/cloudfoundry/npm-cnb v0.0.82/go.mod h1:4tlvxS0YbZp7Nc0krGvLhtG22Mi0tyIDLRzxM5/Rf6c=
 github.com/cloudfoundry/npm-cnb v0.0.83 h1:68svp9UBTQbanifbJ0jyVKTecOYhOmBrEuBuAdccujg=
