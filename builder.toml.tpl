@@ -1,8 +1,8 @@
 # DO NOT EDIT - this file is the output of the 'builder.toml.tpl.tpl' template 
 buildpacks = [
-  { id = "io.projectriff.command",       uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/io.projectriff.command-0.0.10-BUILD-SNAPSHOT-20191120141213-a86527d33694374e.tgz" },
-  { id = "io.projectriff.java",          uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-0.2.0-BUILD-SNAPSHOT-20191206161631-b3b925eeb01d41f3.tgz" },
-  { id = "io.projectriff.node",          uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-0.2.0-BUILD-SNAPSHOT-20191205213235-4fe358af155c1fa9.tgz" },
+  { id = "io.projectriff.command",       uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/io.projectriff.command-0.0.10-BUILD-SNAPSHOT-20200123121315-b41b66da992a0ee8.tgz" },
+  { id = "io.projectriff.java",          uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-0.2.0-BUILD-SNAPSHOT-20200123143051-d8e321f3f5a6ee67.tgz" },
+  { id = "io.projectriff.node",          uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-0.2.0-BUILD-SNAPSHOT-20200123121303-9cb64c0b73f12a0f.tgz" },
 
   { id = "org.cloudfoundry.buildsystem", uri = "https://storage.googleapis.com/cnb-buildpacks/build-system-cnb/org.cloudfoundry.buildsystem-{{ go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/build-system-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
   { id = "org.cloudfoundry.node-engine", uri = "https://github.com/cloudfoundry/node-engine-cnb/releases/download/{{ go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/node-engine-cnb").Version' }}/node-engine-cnb-{{ go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/node-engine-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
