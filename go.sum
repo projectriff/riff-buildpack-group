@@ -62,6 +62,8 @@ github.com/cloudfoundry/build-system-cnb v1.2.0 h1:EpSo8EpIpxTJ7mfqNT7XLVWlrhP6q
 github.com/cloudfoundry/build-system-cnb v1.2.0/go.mod h1:nt7UcLGAgc75sE6+OdwibGtuXZt09gBxB8unxJydOWo=
 github.com/cloudfoundry/build-system-cnb v1.2.6 h1:X0K9AIdvehhJsz1Y5dtM0bsuX2zJvrN83WZiPtYyc8Y=
 github.com/cloudfoundry/build-system-cnb v1.2.6/go.mod h1:XvtcsnMss/Om2ATMPVeMtarkwx53XQYMyPNzSzWbTyI=
+github.com/cloudfoundry/build-system-cnb v1.2.7 h1:bt0ytCcZ9mXVXfuWEFpzK085FFj9YUAuabXwhWtCqEM=
+github.com/cloudfoundry/build-system-cnb v1.2.7/go.mod h1:kq7BLNPyG5Pay+3lUKxd4Uc3yTq2vO1eLDTcnqhBTkc=
 github.com/cloudfoundry/dagger v0.0.0-20191213212648-a45390236bb7/go.mod h1:PiNRNPj6nYimhASeft5kCrRhXzyKeqfkP9Wg+/7NivA=
 github.com/cloudfoundry/dagger v0.0.0-20200114192520-43fb0b3ec98f/go.mod h1:PiNRNPj6nYimhASeft5kCrRhXzyKeqfkP9Wg+/7NivA=
 github.com/cloudfoundry/jvm-application-cnb v1.0.110 h1:1KXWsR8jPIzqi6s+qYKoIfGse5t0/o4SyrhyZYWEU44=
@@ -216,6 +218,7 @@ github.com/mattn/go-runewidth v0.0.8/go.mod h1:H031xJmbD/WCDINGzjvQ9THkh0rPKHF+m
 github.com/mattn/go-shellwords v1.0.6/go.mod h1:3xCvwCdWdlDJUrvuMn7Wuy9eWs4pE8vqg+NOMyg4B2o=
 github.com/mattn/go-shellwords v1.0.7/go.mod h1:3xCvwCdWdlDJUrvuMn7Wuy9eWs4pE8vqg+NOMyg4B2o=
 github.com/mattn/go-shellwords v1.0.9/go.mod h1:EZzvwXDESEeg03EKmM+RmDnNOPKG4lLtQsUlTZDWQ8Y=
+github.com/mattn/go-shellwords v1.0.10/go.mod h1:EZzvwXDESEeg03EKmM+RmDnNOPKG4lLtQsUlTZDWQ8Y=
 github.com/miekg/dns v1.1.27/go.mod h1:KNUDUusw/aVsxyTYZM1oqvCicbwhgbNgztCETuNZ7xM=
 github.com/mitchellh/mapstructure v1.1.2 h1:fmNYVwqnSfB9mZU6OS2O6GsXM+wcskZDuKQzvN1EDeE=
 github.com/mitchellh/mapstructure v1.1.2/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
