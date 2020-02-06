@@ -31,6 +31,7 @@ github.com/buildpack/libbuildpack v1.25.10/go.mod h1:SAar5bFlgGoIk0umOpPyl5XvnWt
 github.com/buildpack/libbuildpack v1.25.11/go.mod h1:Fb1Eg3vT+B3i5l46aF6WsW7naCAYpCZmAv9UzIYs614=
 github.com/buildpacks/libbuildpack/v2 v2.0.3/go.mod h1:ISfrqZ/uemxv/pCEqq7Jp0l37sRpUpYkbxeaCEp0LPA=
 github.com/buildpacks/libbuildpack/v2 v2.0.6/go.mod h1:h7deophsQ2/BJyQS7WB2tQAWWlTa5Or7vcbdhVE1bis=
+github.com/buildpacks/libbuildpack/v2 v2.0.7/go.mod h1:h7deophsQ2/BJyQS7WB2tQAWWlTa5Or7vcbdhVE1bis=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/cheggaaa/pb v2.0.7+incompatible/go.mod h1:pQciLPpbU0oxA0h+VJYYLxO+XeDQb5pZijXscXHm81s=
 github.com/cheggaaa/pb/v3 v3.0.4/go.mod h1:7rgWxLrAUcFMkvJuv09+DYi7mMUYi8nO9iOWcvGJPfw=
@@ -89,6 +90,7 @@ github.com/cloudfoundry/libcfbuildpack v1.91.23/go.mod h1:h95FwHvbelcd0cSOhLC8SG
 github.com/cloudfoundry/libcfbuildpack/v2 v2.0.2/go.mod h1:2uWYXoTdidcJ0jDj881AVxo2GboDqbDFDe9uZa+Yam4=
 github.com/cloudfoundry/libcfbuildpack/v2 v2.1.0/go.mod h1:2uWYXoTdidcJ0jDj881AVxo2GboDqbDFDe9uZa+Yam4=
 github.com/cloudfoundry/libcfbuildpack/v2 v2.1.4/go.mod h1:59LyqmVqUSISwSlcPxit6tJvxVY6W3nF7bS7S89RVvI=
+github.com/cloudfoundry/libcfbuildpack/v2 v2.1.5/go.mod h1:sJkVYgVet2isqGcmXDrlpIyMcefmkQVXyvhhsScr3O4=
 github.com/cloudfoundry/node-engine-cnb v0.0.129 h1:kKPF7lF3xBVXwa6nOpaXGTln2MDpEnojpyS68cKDxIg=
 github.com/cloudfoundry/node-engine-cnb v0.0.129/go.mod h1:7uq0wX619V/shLyg2gdaSH/8/Z+Nw8/RResTYkKvEHs=
 github.com/cloudfoundry/node-engine-cnb v0.0.132 h1:njtbAYiIo33tErDJK+OFHJEnB7UI70to1qmswoRw2nQ=
@@ -145,6 +147,8 @@ github.com/cloudfoundry/openjdk-cnb v1.2.0 h1:ecrXINcrUVbrSKyGqbvi5d0x2mSfZWo0zF
 github.com/cloudfoundry/openjdk-cnb v1.2.0/go.mod h1:cirYqqSOH/6URu1/vpW66dqYSnjFHTf0Ue4QujnTqmc=
 github.com/cloudfoundry/openjdk-cnb v1.2.9 h1:/ZR1IXw+dRiowuIY9EOtGp4HA/VSSLSC7T0YT4JpnhI=
 github.com/cloudfoundry/openjdk-cnb v1.2.9/go.mod h1:EStwfebMNReAg/RESpK60Ji9uuNwDfsp+SaWRElnz38=
+github.com/cloudfoundry/openjdk-cnb v1.2.11 h1:53olMYBwNkz1RoR8fkK3H19dHeoVK/uUN7MmoaUUQKM=
+github.com/cloudfoundry/openjdk-cnb v1.2.11/go.mod h1:5o8p6+JAUuiHCrnHReA5SYBjuCR6yXc9rwtVUKFx+xI=
 github.com/cloudfoundry/packit v0.0.0-20191202164725-43d6fa19d96c/go.mod h1:FffmDGXYVSrrj9HlFP4XbnJnQi7jHcsElHujPGbfP3U=
 github.com/cloudfoundry/packit v0.0.0-20200114205204-249189c06cb9/go.mod h1:FBe0GK9B8hkfQeyD5UzrGz0j115H+OH7L3Yc/EuDunI=
 github.com/cloudfoundry/packit v0.0.0-20200117181238-c9fbc0a623ec/go.mod h1:p3aFtVhY7pMoXsIrp8vTk01FYaFebTURk5KYae5/Nnw=
