@@ -67,6 +67,8 @@ github.com/cloudfoundry/build-system-cnb v1.2.7 h1:bt0ytCcZ9mXVXfuWEFpzK085FFj9Y
 github.com/cloudfoundry/build-system-cnb v1.2.7/go.mod h1:kq7BLNPyG5Pay+3lUKxd4Uc3yTq2vO1eLDTcnqhBTkc=
 github.com/cloudfoundry/build-system-cnb v1.2.9 h1:/XSm3kSgWr1MMHWJ3entdHA2od2cqCDDN94f1CsNiyg=
 github.com/cloudfoundry/build-system-cnb v1.2.9/go.mod h1:Qdpx61EHbg/dupKe4vGCAEQ2pYEx6N6doOS2QvutWkg=
+github.com/cloudfoundry/build-system-cnb v1.2.11 h1:z3bW9sjVOxTuUJ+gGO7eupOUsrcvENwjkcyxldIn4I4=
+github.com/cloudfoundry/build-system-cnb v1.2.11/go.mod h1:FBst8heiX8ecRqwsseYyBfSkmVgRKa+M1/NEM+WmOsw=
 github.com/cloudfoundry/dagger v0.0.0-20191213212648-a45390236bb7/go.mod h1:PiNRNPj6nYimhASeft5kCrRhXzyKeqfkP9Wg+/7NivA=
 github.com/cloudfoundry/dagger v0.0.0-20200114192520-43fb0b3ec98f/go.mod h1:PiNRNPj6nYimhASeft5kCrRhXzyKeqfkP9Wg+/7NivA=
 github.com/cloudfoundry/jvm-application-cnb v1.0.110 h1:1KXWsR8jPIzqi6s+qYKoIfGse5t0/o4SyrhyZYWEU44=
@@ -94,6 +96,7 @@ github.com/cloudfoundry/libcfbuildpack/v2 v2.1.0/go.mod h1:2uWYXoTdidcJ0jDj881AV
 github.com/cloudfoundry/libcfbuildpack/v2 v2.1.4/go.mod h1:59LyqmVqUSISwSlcPxit6tJvxVY6W3nF7bS7S89RVvI=
 github.com/cloudfoundry/libcfbuildpack/v2 v2.1.5/go.mod h1:sJkVYgVet2isqGcmXDrlpIyMcefmkQVXyvhhsScr3O4=
 github.com/cloudfoundry/libcfbuildpack/v2 v2.1.6/go.mod h1:H8kBhhtRt2j6VQG1GnFTe7+wsTCuplH98gUs4SZqcX0=
+github.com/cloudfoundry/libcfbuildpack/v2 v2.1.7/go.mod h1:2Oj5vCnmunL+9Lx88rCga82WQeq6fpIeXL861EfaXus=
 github.com/cloudfoundry/node-engine-cnb v0.0.129 h1:kKPF7lF3xBVXwa6nOpaXGTln2MDpEnojpyS68cKDxIg=
 github.com/cloudfoundry/node-engine-cnb v0.0.129/go.mod h1:7uq0wX619V/shLyg2gdaSH/8/Z+Nw8/RResTYkKvEHs=
 github.com/cloudfoundry/node-engine-cnb v0.0.132 h1:njtbAYiIo33tErDJK+OFHJEnB7UI70to1qmswoRw2nQ=
@@ -158,6 +161,7 @@ github.com/cloudfoundry/packit v0.0.0-20191202164725-43d6fa19d96c/go.mod h1:Fffm
 github.com/cloudfoundry/packit v0.0.0-20200114205204-249189c06cb9/go.mod h1:FBe0GK9B8hkfQeyD5UzrGz0j115H+OH7L3Yc/EuDunI=
 github.com/cloudfoundry/packit v0.0.0-20200117181238-c9fbc0a623ec/go.mod h1:p3aFtVhY7pMoXsIrp8vTk01FYaFebTURk5KYae5/Nnw=
 github.com/cloudfoundry/packit v0.0.0-20200129211718-a2b2b4f67a52/go.mod h1:p3aFtVhY7pMoXsIrp8vTk01FYaFebTURk5KYae5/Nnw=
+github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/envoyproxy/go-control-plane v0.9.1-0.20191026205805-5f8ba28d4473/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/protoc-gen-validate v0.1.0/go.mod h1:iSmxcyjqTsJpI2R4NaDN7+kN2VEUnK/pcBlmesArF7c=
