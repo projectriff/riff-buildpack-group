@@ -7,5 +7,5 @@ require (
 	github.com/cloudfoundry/node-engine-cnb v0.0.150
 	github.com/cloudfoundry/npm-cnb v0.0.87
 	github.com/cloudfoundry/openjdk-cnb v1.2.12
-	github.com/projectriff/libfnbuildpack v0.3.0
+	github.com/projectriff/libfnbuildpack v0.4.0
 )
