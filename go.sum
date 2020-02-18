@@ -71,6 +71,8 @@ github.com/cloudfoundry/build-system-cnb v1.2.11 h1:z3bW9sjVOxTuUJ+gGO7eupOUsrcv
 github.com/cloudfoundry/build-system-cnb v1.2.11/go.mod h1:FBst8heiX8ecRqwsseYyBfSkmVgRKa+M1/NEM+WmOsw=
 github.com/cloudfoundry/build-system-cnb v1.2.12 h1:iZp8RQxOISeXsBZ/Evx+7/h5h/+FR3rrXUTS4okMny0=
 github.com/cloudfoundry/build-system-cnb v1.2.12/go.mod h1:4qBp75skIoTvVS5P1RU92Sd24qTfwwiPspL04xEhVQ8=
+github.com/cloudfoundry/build-system-cnb v1.2.13 h1:4vsYgS0ouVOMMVkGGcxIYTN8qU3ujAtB9FMVxaVruBE=
+github.com/cloudfoundry/build-system-cnb v1.2.13/go.mod h1:4qBp75skIoTvVS5P1RU92Sd24qTfwwiPspL04xEhVQ8=
 github.com/cloudfoundry/dagger v0.0.0-20191213212648-a45390236bb7/go.mod h1:PiNRNPj6nYimhASeft5kCrRhXzyKeqfkP9Wg+/7NivA=
 github.com/cloudfoundry/dagger v0.0.0-20200114192520-43fb0b3ec98f/go.mod h1:PiNRNPj6nYimhASeft5kCrRhXzyKeqfkP9Wg+/7NivA=
 github.com/cloudfoundry/dagger v0.0.0-20200213200846-c2a9723f08c4/go.mod h1:u5NQ0WO/W1nwFEwmLuvLoJVrKF4LIFVkKTh9hGODwZs=
