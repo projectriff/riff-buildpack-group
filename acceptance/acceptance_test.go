@@ -27,6 +27,7 @@ import (
 func TestBuilder(t *testing.T) {
 	tcs := &fntesting.Testcases{
 		Common: fntesting.Testcase{
+			PackCmd:     []string{"go", "run", "github.com/buildpacks/pack/cmd/pack"},
 			Repo:        "https://github.com/projectriff/fats",
 			Refspec:     "dc9e7758d15c669febee87d7f1801ce596348de1", // master as of 2019-09-19
 			Input:       "builder",
