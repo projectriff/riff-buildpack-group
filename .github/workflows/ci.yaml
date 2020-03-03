@@ -16,8 +16,6 @@ jobs:
     - uses: actions/setup-go@v1
       with:
         go-version: '1.13'
-    - name: Install pack
-      run: .github/workflows/install-pack.sh
     - name: Create Builder
       run: make build
     - name: Test Builder
@@ -37,8 +35,6 @@ jobs:
     - uses: actions/setup-go@v1
       with:
         go-version: '1.13'
-    - name: Install pack
-      run: .github/workflows/install-pack.sh
     - name: Create Builder
       run: make build
     - name: gcloud auth

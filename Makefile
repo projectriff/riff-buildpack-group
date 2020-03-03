@@ -1,10 +1,12 @@
+PACK=go run github.com/buildpacks/pack/cmd/pack
+
 .PHONY: build build-dev test grab-run-image templates
 
 build: builder.toml
-	pack create-builder -b builder.toml projectriff/builder
+	$(PACK) create-builder -b builder.toml projectriff/builder
 
 build-dev: builder-dev.toml
-	pack create-builder -b builder-dev.toml projectriff/builder
+	$(PACK) create-builder -b builder-dev.toml projectriff/builder
 
 test: grab-run-image
 	GO111MODULE=on go test -v -tags=acceptance ./acceptance
