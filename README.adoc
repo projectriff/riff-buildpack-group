@@ -28,6 +28,7 @@ To build the `projectriff/builder` builder you'll need
 
 * Go 1.13+
 * a running local docker daemon
+* the https://github.com/buildpack/pack[`pack`] command line tool (for local function builds)
 
 === Creating the Builder
 Then, building the builder is as simple as
