@@ -29,7 +29,7 @@ func TestBuilder(t *testing.T) {
 		Common: fntesting.Testcase{
 			PackCmd:     []string{"go", "run", "github.com/buildpacks/pack/cmd/pack"},
 			Repo:        "https://github.com/projectriff/fats",
-			Refspec:     "dc9e7758d15c669febee87d7f1801ce596348de1", // master as of 2019-09-19
+			Refspec:     "766043f94a84e30d210258bdfdecb1bc9ca011f1", // master as of 2020-03-09
 			Input:       "builder",
 			ContentType: "text/plain",
 			Accept:      "text/plain",
@@ -51,6 +51,11 @@ func TestBuilder(t *testing.T) {
 			{
 				Name:        "npm",
 				SubPath:     "functions/uppercase/npm",
+				SkipRebuild: true,
+			},
+			{
+				Name:        "yarn",
+				SubPath:     "functions/uppercase/yarn",
 				SkipRebuild: true,
 			},
 			{

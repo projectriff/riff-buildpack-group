@@ -4,4 +4,4 @@ kind: ClusterBuilder
 metadata:
   name: riff-application
 spec:
-  image: cloudfoundry/cnb:0.0.55-bionic 
+  image: cloudfoundry/cnb:0.0.56-bionic 

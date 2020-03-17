@@ -2,10 +2,11 @@
 buildpacks = [
   { id = "io.projectriff.command",       uri = "https://storage.googleapis.com/projectriff/command-function-buildpack/io.projectriff.command-0.2.0-BUILD-SNAPSHOT-20200304161811-a66028adfc6d2ab6.tgz" },
   { id = "io.projectriff.java",          uri = "https://storage.googleapis.com/projectriff/java-function-buildpack/io.projectriff.java-0.3.0-BUILD-SNAPSHOT-20200306114524-6073f483c0dca242.tgz" },
-  { id = "io.projectriff.node",          uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-0.3.0-BUILD-SNAPSHOT-20200305115911-75cd6cff81eb1f7f.tgz" },
+  { id = "io.projectriff.node",          uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-0.3.0-BUILD-SNAPSHOT-20200317151313-a4384bbaf6bcb3d2.tgz" },
 
   { id = "org.cloudfoundry.buildsystem", uri = "https://storage.googleapis.com/cnb-buildpacks/build-system-cnb/org.cloudfoundry.buildsystem-{{ go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/build-system-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
   { id = "org.cloudfoundry.node-engine", uri = "https://github.com/cloudfoundry/node-engine-cnb/releases/download/{{ go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/node-engine-cnb").Version' }}/node-engine-cnb-{{ go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/node-engine-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
+  { id = "org.cloudfoundry.yarn-install",        uri = "https://github.com/cloudfoundry/yarn-install-cnb/releases/download/v0.1.10/yarn-install-cnb-0.1.10.tgz" },
   { id = "org.cloudfoundry.npm",         uri = "https://github.com/cloudfoundry/npm-cnb/releases/download/{{ go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/npm-cnb").Version' }}/npm-cnb-{{ go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/npm-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
   { id = "org.cloudfoundry.openjdk",     uri = "https://storage.googleapis.com/cnb-buildpacks/openjdk-cnb/org.cloudfoundry.openjdk-{{ go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/openjdk-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
 ]
@@ -15,6 +16,13 @@ group = [
   { id = "org.cloudfoundry.openjdk" },
   { id = "org.cloudfoundry.buildsystem", optional = true },
   { id = "io.projectriff.java" },
+]
+
+[[order]]
+group = [
+  { id = "org.cloudfoundry.node-engine" },
+  { id = "org.cloudfoundry.yarn-install" },
+  { id = "io.projectriff.node" },
 ]
 
 [[order]]
