@@ -43,6 +43,9 @@ group = [
  { id = "io.projectriff.command" },
 ]
 
+[lifecycle]
+version = "0.7.2"
+
 [stack]
 id          = "io.buildpacks.stacks.bionic"
 build-image = "cloudfoundry/build:base-cnb"
