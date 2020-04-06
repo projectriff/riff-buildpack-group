@@ -4,7 +4,7 @@ buildpacks = [
   { id = "io.projectriff.node",          uri = "https://storage.googleapis.com/projectriff/node-function-buildpack/io.projectriff.node-{{ curl -s https://storage.googleapis.com/projectriff/node-function-buildpack/versions/snapshots/master }}.tgz" },
 
   { id = "org.cloudfoundry.buildsystem", uri = "https://storage.googleapis.com/cnb-buildpacks/build-system-cnb/org.cloudfoundry.buildsystem-{{tpl_escape go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/build-system-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
-  { id = "org.cloudfoundry.node-engine", uri = "https://github.com/cloudfoundry/node-engine-cnb/releases/download/{{tpl_escape go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/node-engine-cnb").Version' }}/node-engine-cnb-{{tpl_escape go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/node-engine-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
+  { id = "paketo-buildpacks/node-engine", uri = "https://github.com/cloudfoundry/node-engine-cnb/releases/download/{{tpl_escape go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/node-engine-cnb").Version' }}/node-engine-cnb-{{tpl_escape go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/node-engine-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
   { id = "org.cloudfoundry.yarn-install",        uri = "https://github.com/cloudfoundry/yarn-install-cnb/releases/download/{{tpl_escape go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/yarn-install-cnb").Version' }}/yarn-install-cnb-{{tpl_escape go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/yarn-install-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
   { id = "org.cloudfoundry.npm",         uri = "https://github.com/cloudfoundry/npm-cnb/releases/download/{{tpl_escape go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/npm-cnb").Version' }}/npm-cnb-{{tpl_escape go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/npm-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
   { id = "org.cloudfoundry.openjdk",     uri = "https://storage.googleapis.com/cnb-buildpacks/openjdk-cnb/org.cloudfoundry.openjdk-{{tpl_escape go mod download -json | jq -r 'select(.Path == "github.com/cloudfoundry/openjdk-cnb").Version' | sed -e 's/^v//g' }}.tgz" },
@@ -19,21 +19,21 @@ group = [
 
 [[order]]
 group = [
-  { id = "org.cloudfoundry.node-engine" },
+  { id = "paketo-buildpacks/node-engine" },
   { id = "org.cloudfoundry.yarn-install" },
   { id = "io.projectriff.node" },
 ]
 
 [[order]]
 group = [
-  { id = "org.cloudfoundry.node-engine" },
+  { id = "paketo-buildpacks/node-engine" },
   { id = "org.cloudfoundry.npm" },
   { id = "io.projectriff.node" },
 ]
 
 [[order]]
 group = [
-  { id = "org.cloudfoundry.node-engine" },
+  { id = "paketo-buildpacks/node-engine" },
   { id = "io.projectriff.node" },
 ]
 
