@@ -148,6 +148,8 @@ github.com/cloudfoundry/npm-cnb v0.1.6 h1:OG48vaCQNJcbVwt/Ddsn38g9/KrWR6A85FCxgi
 github.com/cloudfoundry/npm-cnb v0.1.6/go.mod h1:6bmtoTLoea9/VT51lxRkVzeK4TSWWoTcp2J+K7vbGtk=
 github.com/cloudfoundry/npm-cnb v0.1.8 h1:Zi4XlFO+3ngpNBw7ycz2IzYoSBXVimG+JPGy7G/131o=
 github.com/cloudfoundry/npm-cnb v0.1.8/go.mod h1:6bmtoTLoea9/VT51lxRkVzeK4TSWWoTcp2J+K7vbGtk=
+github.com/cloudfoundry/npm-cnb v0.1.10 h1:VlH1hEN02jHvabi3h84eUCy8Nu7njFnDf9rRMsIXP9Q=
+github.com/cloudfoundry/npm-cnb v0.1.10/go.mod h1:6bmtoTLoea9/VT51lxRkVzeK4TSWWoTcp2J+K7vbGtk=
 github.com/cloudfoundry/occam v0.0.0-20200218193031-7e2052ce2f0f/go.mod h1:stUR8Lj7wzXGPU7zjYqGdfk/Rtlgq44hD3Vf6lCswms=
 github.com/cloudfoundry/occam v0.0.0-20200227222407-1c4318bd26e2/go.mod h1:stUR8Lj7wzXGPU7zjYqGdfk/Rtlgq44hD3Vf6lCswms=
 github.com/cloudfoundry/occam v0.0.0-20200323143411-1484bd3b2566/go.mod h1:stUR8Lj7wzXGPU7zjYqGdfk/Rtlgq44hD3Vf6lCswms=
@@ -172,6 +174,8 @@ github.com/cloudfoundry/yarn-install-cnb v0.1.16 h1:i3GzElYDqOt/zQdsDLsBCwKR3Gn0
 github.com/cloudfoundry/yarn-install-cnb v0.1.16/go.mod h1:8OO9O82jJaO4h2BC6LYWpmWRIZV7UMut2qqztLj4088=
 github.com/cloudfoundry/yarn-install-cnb v0.1.17 h1:NL8tcA8vnfEiOpz/pImKr6RISfcHyCWPNzCAVincCtA=
 github.com/cloudfoundry/yarn-install-cnb v0.1.17/go.mod h1:8OO9O82jJaO4h2BC6LYWpmWRIZV7UMut2qqztLj4088=
+github.com/cloudfoundry/yarn-install-cnb v0.1.18 h1:guH5UMzo9122wCsZG8KK7SAo+4isUuO8I4OA16D09og=
+github.com/cloudfoundry/yarn-install-cnb v0.1.18/go.mod h1:8OO9O82jJaO4h2BC6LYWpmWRIZV7UMut2qqztLj4088=
 github.com/cncf/udpa/go v0.0.0-20191209042840-269d4d468f6f/go.mod h1:M8M6+tZqaGXZJjfX53e64911xZQV5JYwmTeXPW+k8Sc=
 github.com/cockroachdb/datadriven v0.0.0-20190809214429-80d97fb3cbaa/go.mod h1:zn76sxSg3SzpJ0PPJaLDCu+Bu0Lg3sKTORVIj19EIF8=
 github.com/containerd/cgroups v0.0.0-20190919134610-bf292b21730f/go.mod h1:OApqhQ4XNSNC13gXIwDjhOQxjWa/NxkwZXJ1EvqT0ko=

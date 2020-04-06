@@ -6,8 +6,8 @@ require (
 	github.com/buildpacks/pack v0.9.0
 	github.com/cloudfoundry/build-system-cnb v1.2.15
 	github.com/cloudfoundry/node-engine-cnb v0.0.177
-	github.com/cloudfoundry/npm-cnb v0.1.8
+	github.com/cloudfoundry/npm-cnb v0.1.10
 	github.com/cloudfoundry/openjdk-cnb v1.2.14
-	github.com/cloudfoundry/yarn-install-cnb v0.1.17
+	github.com/cloudfoundry/yarn-install-cnb v0.1.18
 	github.com/projectriff/libfnbuildpack v0.4.1
 )
