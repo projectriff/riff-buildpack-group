@@ -3,7 +3,7 @@ module github.com/projectriff/builder
 go 1.13
 
 require (
-	github.com/buildpacks/pack v0.9.0
+	github.com/buildpacks/pack v0.10.0
 	github.com/cloudfoundry/build-system-cnb v1.2.15
 	github.com/cloudfoundry/node-engine-cnb v0.0.184
 	github.com/cloudfoundry/npm-cnb v0.1.15
