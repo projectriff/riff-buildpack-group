@@ -5,9 +5,9 @@ go 1.13
 require (
 	github.com/buildpacks/pack v0.10.0
 	github.com/cloudfoundry/build-system-cnb v1.2.15
-	github.com/cloudfoundry/node-engine-cnb v0.0.184
-	github.com/cloudfoundry/npm-cnb v0.1.15
 	github.com/cloudfoundry/openjdk-cnb v1.2.14
-	github.com/cloudfoundry/yarn-install-cnb v0.1.25
+	github.com/paketo-buildpacks/node-engine v0.0.187
+	github.com/paketo-buildpacks/npm v0.1.19
+	github.com/paketo-buildpacks/yarn-install v0.1.28
 	github.com/projectriff/libfnbuildpack v0.4.1
 )
