@@ -67,3 +67,7 @@ You should get something similar to
 Successfully built f36967212b6c
 Successfully tagged your-org/my-function
 ----
+
+=== Validating a custom Builder or Invoker
+
+See https://github.com/projectriff/builder/blob/master/INVOKER_VALIDATION.md{INVOKER_VALIDATION.md} for several ways of validating a custon Builder or Invoker.
