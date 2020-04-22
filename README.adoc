@@ -68,6 +68,7 @@ Successfully built f36967212b6c
 Successfully tagged your-org/my-function
 ----
 
-=== Validating a custom Builder or Invoker
+=== For Contributors: Testing an Unreleased Invoker, Buildpack or Builder
 
-See https://github.com/projectriff/builder/blob/master/INVOKER_VALIDATION.md{INVOKER_VALIDATION.md} for several ways of validating a custon Builder or Invoker.
+See https://github.com/projectriff/builder/blob/master/INVOKER_VALIDATION.md[INVOKER_VALIDATION.md]
+if you wish to test an unreleased invoker, buildpack or builder.

@@ -1,11 +1,14 @@
-# riff Invoker External Validation
+# Contributor's guide: Testing an Unreleased Invoker, Buildpack or Builder
+
+This guide explains how to test an unreleased riff invoker and/or riff buildpack and/or riff builder.
+
+If you only need to deploy the latest builder (i.e. `master`), directly start from [this section](#updating-the-builder).
 
 ## La Vida Local
 
 This method is the fastest way to externally validate an invoker.
 It does not _necessarily_ requires a riff install on a working Kubernetes cluster.
-However, the downside of this approach is that a lot happens locally.
-As a consequence, the corresponding tooling must be installed on your machine:
+However, the downside is the corresponding tooling must be installed on your machine as a lot happens locally:
 
  - Golang SDK for the [Command Invoker](https://github.com/projectriff/command-function-invoker/) and the [Streaming Adapter](https://github.com/projectriff/streaming-http-adapter)
  - JDK and Maven for the [Java Invoker](https://github.com/projectriff/java-function-invoker) and the local bindings generator of the [Java Processor](https://github.com/projectriff/streaming-processor)
@@ -35,8 +38,8 @@ this documentation always involve the adapter to reflect what actually happens o
 In one terminal, start the adapter and the invoker (logs will appear there):
 
 ```shell
-cd ~/workspace/streaming-http-adapter
-FUNCTION_URI=/path/to/function.js NODE_DEBUG='riff' ./streaming-http-adapter node ~/workspace/node-function-invoker/server.js
+ $ cd ~/workspace/streaming-http-adapter
+ $ FUNCTION_URI=/path/to/function.js NODE_DEBUG='riff' ./streaming-http-adapter node ~/workspace/node-function-invoker/server.js
 ```
 
 #### Starting the Java Invoker
@@ -44,11 +47,13 @@ FUNCTION_URI=/path/to/function.js NODE_DEBUG='riff' ./streaming-http-adapter nod
 In one terminal, start the adapter and the invoker:
 
 ```shell
-cd ~/workspace/streaming-http-adapter
-./streaming-http-adapter java -jar ~/workspace/java-function-invoker/target/java-function-invoker-*.jar --spring.cloud.function.location=/path/to/function.jar --spring.cloud.function.function-class=function.class.Name
+ $ cd ~/workspace/streaming-http-adapter
+ $ mvn --file ~/workspace/java-function-invoker clean package
+ $ ./streaming-http-adapter java -jar ~/workspace/java-function-invoker/target/java-function-invoker-*.jar --spring.cloud.function.location=/path/to/function.jar --spring.cloud.function.function-class=function.class.Name
 ```
 
-When testing a Spring Boot function instead of a plain old `java.util.function.Function` (a.k.a. POJUFF), replace `--spring.cloud.function.function-class=function.class.Name` with `spring.cloud.function.definition=functionBeanName`.
+When testing a Spring Boot function instead of a plain old `java.util.function.Function` (a.k.a. POJUFF? 🤔), 
+replace `--spring.cloud.function.function-class=function.class.Name` with `spring.cloud.function.definition=functionBeanName`.
 
 #### Sending a Request / Getting a Reply
 
@@ -98,7 +103,7 @@ forwarded to the actual in-cluster Liiklus instance. In this example:
  $ sudo kubefwd svc franz-gateway-4v8fj
 ```
 
-The invoker must have started, otherwise, please refer to previous sections.
+The invoker must have started, please refer to previous sections otherwise.
 
 Once the invoker is started, start the processor **in a separate terminal** with the appropriate configuration. 
 In this example (notice the `CNB_BINDINGS` value from the `local_bindings.sh` execution):
@@ -143,7 +148,7 @@ Finally, update your riff-system configuration to consume that image and profit!
 
 #### Command Function Buildpack
 
- 1. Create an archive of the command invoker (`cd /path/to/command/invoker; make release`)
+ 1. Create an archive of the command invoker (`cd ~/workspace/command-function-invoker; make release`)
  2. Clone the command function buildpack [repository](https://github.com/projectriff/command-function-buildpack/)
  3. Edit [`buildpack.toml`](https://github.com/projectriff/command-function-buildpack/blob/e69f4edaab35d80bc37c152f4070a5cb5c30538e/buildpack.toml#L35) to point it to the local archive created at step 1 (`file:///path/to/command/invoker.tgz`) and update the checksum accordingly
  4. Run `make build`
@@ -162,11 +167,14 @@ Finally, update your riff-system configuration to consume that image and profit!
  3. Edit [`buildpack.toml`](https://github.com/projectriff/java-function-buildpack/blob/7ee5574089ad230d16bcf1ddd71909a1d5e22b60/buildpack.toml#L35) to point it to the local archive created at step 1 (`file:///path/to/node/invoker.tgz`) and update the checksum accordingly
  4. Run `make build`
  
-### Updating the Builder
+### [Updating the Builder](#updating-the-builder)
 
  1. Clone the Builder [repository](https://github.com/projectriff/builder)
  2. Run `make build-dev`, this will automatically pick up all local buildpacks 💅
- 3. If you don't have the permission to push the resulting builder image (i.e. `projectriff/builder`), alias it to something that works, e.g.: `docker tag projectriff/builder fbiville/builder` and push it (`docker push fbiville/builder`)
+Alternatively, run `make build` if you only need the latest builder without specific changes to the buildpacks or invokers.
+ 3. If you don't have the permission to push the resulting builder image (i.e. `projectriff/builder`), 
+alias it to something that works, e.g.: `docker tag projectriff/builder fbiville/builder` 
+and push it (`docker push fbiville/builder`)
  
 ### Updating riff-system configuration
 
