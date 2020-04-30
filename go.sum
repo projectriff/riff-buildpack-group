@@ -443,6 +443,8 @@ github.com/paketo-buildpacks/npm v0.1.19 h1:usfRNqEKyHbDt9VGWQANFquM/JTBQq9O/89G
 github.com/paketo-buildpacks/npm v0.1.19/go.mod h1:HrZljUfsDj/iMAhsj6TAtc220cqt6yOVpsE2qsBEp0g=
 github.com/paketo-buildpacks/npm v0.1.20 h1:RutUzsF0BIo8aYaYgRh8CKlqXwJBBzEae+rxsObgXmc=
 github.com/paketo-buildpacks/npm v0.1.20/go.mod h1:dBKRoOuMktj7R77d1wOSTQIcasTKfkGycQRvRn3IH3c=
+github.com/paketo-buildpacks/npm v0.1.21 h1:OxEzqnE8Imbn5LTWvGv2WskhOH/EWldvXPCht5O7bbw=
+github.com/paketo-buildpacks/npm v0.1.21/go.mod h1:Y0dPtpo+GHWogCAFS4ZbTPm32zn8UUuv8zHxZJ6NVCc=
 github.com/paketo-buildpacks/yarn-install v0.1.28 h1:SwIBOGoerRVrwongkbA9kx5Gnc4thU5tPZqxE1CNP2w=
 github.com/paketo-buildpacks/yarn-install v0.1.28/go.mod h1:pObNWlA6Y/fvduplUz3Ph5fn1mkOcCZK6pnYJ4ZrCEk=
 github.com/paketo-buildpacks/yarn-install v0.1.29 h1:TF6Oa+C6KPUZ+FpODBQSnTnIfKQ3C6ILtrkBwBcoKU4=
