@@ -439,6 +439,8 @@ github.com/paketo-buildpacks/node-engine v0.0.192 h1:N9sliMP6RcxwpojXuGQZ3Kxkfri
 github.com/paketo-buildpacks/node-engine v0.0.192/go.mod h1:6EjqB1e7doBLekI/3xC2zguK1+J4exUDAi3DCXUijgw=
 github.com/paketo-buildpacks/node-engine v0.0.193 h1:o+PV1RNDXFHpoaL5q89M8kdBWE7mSEbclA2LpbMdwqc=
 github.com/paketo-buildpacks/node-engine v0.0.193/go.mod h1:6EjqB1e7doBLekI/3xC2zguK1+J4exUDAi3DCXUijgw=
+github.com/paketo-buildpacks/node-engine v0.0.195 h1:1j7vCNSZs9ueX3WrfL97fbEsGDZXJTadfsI0N+eUpoQ=
+github.com/paketo-buildpacks/node-engine v0.0.195/go.mod h1:6EjqB1e7doBLekI/3xC2zguK1+J4exUDAi3DCXUijgw=
 github.com/paketo-buildpacks/npm v0.1.19 h1:usfRNqEKyHbDt9VGWQANFquM/JTBQq9O/89G7pJC92A=
 github.com/paketo-buildpacks/npm v0.1.19/go.mod h1:HrZljUfsDj/iMAhsj6TAtc220cqt6yOVpsE2qsBEp0g=
 github.com/paketo-buildpacks/npm v0.1.20 h1:RutUzsF0BIo8aYaYgRh8CKlqXwJBBzEae+rxsObgXmc=
