@@ -122,6 +122,7 @@ github.com/cloudfoundry/packit v0.0.3 h1:ABdSvNQ8g63bjiy3rFeoEkI/VYWftYySDYF6R1k
 github.com/cloudfoundry/packit v0.0.3/go.mod h1:9xu1MT6SrenSB4oFOXtruMapQ+vdfGXLzBZDnPjhYrM=
 github.com/cloudfoundry/packit v0.0.4/go.mod h1:9xu1MT6SrenSB4oFOXtruMapQ+vdfGXLzBZDnPjhYrM=
 github.com/cloudfoundry/packit v0.0.5/go.mod h1:9xu1MT6SrenSB4oFOXtruMapQ+vdfGXLzBZDnPjhYrM=
+github.com/cloudfoundry/packit v0.0.6/go.mod h1:9xu1MT6SrenSB4oFOXtruMapQ+vdfGXLzBZDnPjhYrM=
 github.com/cncf/udpa/go v0.0.0-20191209042840-269d4d468f6f/go.mod h1:M8M6+tZqaGXZJjfX53e64911xZQV5JYwmTeXPW+k8Sc=
 github.com/cockroachdb/datadriven v0.0.0-20190809214429-80d97fb3cbaa/go.mod h1:zn76sxSg3SzpJ0PPJaLDCu+Bu0Lg3sKTORVIj19EIF8=
 github.com/containerd/cgroups v0.0.0-20190919134610-bf292b21730f/go.mod h1:OApqhQ4XNSNC13gXIwDjhOQxjWa/NxkwZXJ1EvqT0ko=
@@ -451,6 +452,8 @@ github.com/paketo-buildpacks/npm v0.1.20 h1:RutUzsF0BIo8aYaYgRh8CKlqXwJBBzEae+rx
 github.com/paketo-buildpacks/npm v0.1.20/go.mod h1:dBKRoOuMktj7R77d1wOSTQIcasTKfkGycQRvRn3IH3c=
 github.com/paketo-buildpacks/npm v0.1.21 h1:OxEzqnE8Imbn5LTWvGv2WskhOH/EWldvXPCht5O7bbw=
 github.com/paketo-buildpacks/npm v0.1.21/go.mod h1:Y0dPtpo+GHWogCAFS4ZbTPm32zn8UUuv8zHxZJ6NVCc=
+github.com/paketo-buildpacks/npm v0.1.22 h1:OszplL9sm+5S2DrQzBhTqM9TD4MEkGtkY8+krhUpFg0=
+github.com/paketo-buildpacks/npm v0.1.22/go.mod h1:k/WpWnqLhVZhIiU5lPD2lcfiwzCoxOFOj9J7J2UOHig=
 github.com/paketo-buildpacks/yarn-install v0.1.28 h1:SwIBOGoerRVrwongkbA9kx5Gnc4thU5tPZqxE1CNP2w=
 github.com/paketo-buildpacks/yarn-install v0.1.28/go.mod h1:pObNWlA6Y/fvduplUz3Ph5fn1mkOcCZK6pnYJ4ZrCEk=
 github.com/paketo-buildpacks/yarn-install v0.1.29 h1:TF6Oa+C6KPUZ+FpODBQSnTnIfKQ3C6ILtrkBwBcoKU4=
