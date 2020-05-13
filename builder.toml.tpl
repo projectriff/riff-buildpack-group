@@ -40,7 +40,7 @@ group = [
 
 [[order]]
 group = [
- { id = "io.projectriff.command" },
+  { id = "io.projectriff.command" },
 ]
 
 [lifecycle]
