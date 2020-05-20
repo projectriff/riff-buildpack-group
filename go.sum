@@ -459,6 +459,8 @@ github.com/paketo-buildpacks/node-engine v0.0.201 h1:bFJT+3WiExzh4VNeNQx3XovnW0m
 github.com/paketo-buildpacks/node-engine v0.0.201/go.mod h1:JmIkYFN5cUg7Qhe/ZEZm733e4pwJQ5UTBsZRxcRLYXk=
 github.com/paketo-buildpacks/node-engine v0.0.203 h1:QH5mYV6m0t/buomwijVIVIo+wmcxXnDU1h2lrleyMVc=
 github.com/paketo-buildpacks/node-engine v0.0.203/go.mod h1:icyO6xDB++ZwyUszxOZ7FA1GkvyRlU23KTvu553WkUU=
+github.com/paketo-buildpacks/node-engine v0.0.204 h1:SDzJ3BxHLLlYO4QQysMNGok5yIpy0Wt0NRX/yxlmtog=
+github.com/paketo-buildpacks/node-engine v0.0.204/go.mod h1:O60JBDbt+8NB0+qb7VFnM4XC9c2HLdd3H5IZJW44YCM=
 github.com/paketo-buildpacks/npm v0.1.19 h1:usfRNqEKyHbDt9VGWQANFquM/JTBQq9O/89G7pJC92A=
 github.com/paketo-buildpacks/npm v0.1.19/go.mod h1:HrZljUfsDj/iMAhsj6TAtc220cqt6yOVpsE2qsBEp0g=
 github.com/paketo-buildpacks/npm v0.1.20 h1:RutUzsF0BIo8aYaYgRh8CKlqXwJBBzEae+rxsObgXmc=
@@ -476,7 +478,9 @@ github.com/paketo-buildpacks/npm v0.1.27/go.mod h1:FmTPd0PdaFobGc+zBj3H+3TT/IHvf
 github.com/paketo-buildpacks/npm v0.1.28 h1:qQDdNjzYWQxwHxdiyQ8CjHOMCvKjGyxPoV1QbtiByek=
 github.com/paketo-buildpacks/npm v0.1.28/go.mod h1:9zABmARla9yquiQRYQG6KfMcKwddJ+63JOTvkQfmt4A=
 github.com/paketo-buildpacks/occam v0.0.4/go.mod h1:GNW2KzdEjWkcAJZj/aI+PSfXxGHkA8XxEkaUaCP5ttY=
+github.com/paketo-buildpacks/occam v0.0.8/go.mod h1:kJRrFPHH2/mr7nqBQE8Wb/VvEJ2JOcVWx40haWHJjO4=
 github.com/paketo-buildpacks/packit v0.0.8/go.mod h1:S2ud8PcMgCjnOjIYnlituwDFL12uQ9eWy9qjTHlM/IM=
+github.com/paketo-buildpacks/packit v0.0.10/go.mod h1:S2ud8PcMgCjnOjIYnlituwDFL12uQ9eWy9qjTHlM/IM=
 github.com/paketo-buildpacks/yarn-install v0.1.28 h1:SwIBOGoerRVrwongkbA9kx5Gnc4thU5tPZqxE1CNP2w=
 github.com/paketo-buildpacks/yarn-install v0.1.28/go.mod h1:pObNWlA6Y/fvduplUz3Ph5fn1mkOcCZK6pnYJ4ZrCEk=
 github.com/paketo-buildpacks/yarn-install v0.1.29 h1:TF6Oa+C6KPUZ+FpODBQSnTnIfKQ3C6ILtrkBwBcoKU4=
