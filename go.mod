@@ -8,6 +8,6 @@ require (
 	github.com/cloudfoundry/openjdk-cnb v1.2.14
 	github.com/paketo-buildpacks/node-engine v0.0.204
 	github.com/paketo-buildpacks/npm v0.1.28
-	github.com/paketo-buildpacks/yarn-install v0.1.38
+	github.com/paketo-buildpacks/yarn-install v0.1.40
 	github.com/projectriff/libfnbuildpack v0.4.1
 )
