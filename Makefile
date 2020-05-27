@@ -12,8 +12,9 @@ test: grab-run-image
 	GO111MODULE=on go test -v -tags=acceptance ./acceptance
 
 grab-run-image:
-	docker pull cloudfoundry/build:base-cnb
-	docker pull cloudfoundry/run:base-cnb
+	docker pull buildpacksio/lifecycle:$(shell go mod download -json | jq -r 'select(.Path == "github.com/buildpacks/lifecycle").Version' | sed -e 's/^v//g' )
+	docker pull gcr.io/paketo-buildpacks/build:base-cnb
+	docker pull gcr.io/paketo-buildpacks/run:base-cnb
 
 builder.toml: builder.toml.tpl go.mod
 	./ci/apply-template.sh builder.toml.tpl > builder.toml

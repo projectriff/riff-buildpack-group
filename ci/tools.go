@@ -4,6 +4,7 @@
 package tools
 
 import (
+	_ "github.com/buildpacks/lifecycle"
 	_ "github.com/buildpacks/pack"
 	_ "github.com/cloudfoundry/build-system-cnb/buildsystem"
 	_ "github.com/cloudfoundry/openjdk-cnb/jdk"

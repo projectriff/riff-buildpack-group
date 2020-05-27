@@ -44,9 +44,9 @@ group = [
 ]
 
 [lifecycle]
-version = "0.7.2"
+version = "{{ go mod download -json | jq -r 'select(.Path == "github.com/buildpacks/lifecycle").Version' | sed -e 's/^v//g' }}"
 
 [stack]
 id          = "io.buildpacks.stacks.bionic"
-build-image = "cloudfoundry/build:base-cnb"
-run-image   = "cloudfoundry/run:base-cnb"
+build-image = "gcr.io/paketo-buildpacks/build:base-cnb"
+run-image   = "gcr.io/paketo-buildpacks/run:base-cnb"
