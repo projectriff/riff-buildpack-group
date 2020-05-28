@@ -1,5 +1,5 @@
 PACK ?= pack
-BUILDER ?= projectriff/builder:dev-$(shell cat builder.toml | md5)
+BUILDER ?= projectriff/builder:dev-$(shell openssl dgst -md5 builder.toml | cut -d' ' -f2)
 
 .PHONY: build test
 

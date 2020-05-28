@@ -21,7 +21,9 @@ jobs:
     - name: Create Builder
       run: make build
     - name: Test Builder
-      run: make test
+      run: |
+        git config --global --bool --add advice.detachedHead false
+        make test
 
   publish:
     needs: test
