@@ -29,7 +29,7 @@ func TestBuilder(t *testing.T) {
 			Builder:     os.Getenv("BUILDER"),
 			PackCmd:     []string{"pack"},
 			Repo:        "https://github.com/projectriff/fats",
-			Refspec:     "766043f94a84e30d210258bdfdecb1bc9ca011f1", // master as of 2020-03-09
+			Refspec:     "766043f94a84e30d210258bdfdecb1bc9ca011f1", // main as of 2020-03-09
 			Input:       "builder",
 			ContentType: "text/plain",
 			Accept:      "text/plain",
