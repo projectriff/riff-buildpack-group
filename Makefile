@@ -4,7 +4,7 @@ BUILDER ?= projectriff/builder:dev-$(shell openssl dgst -md5 builder.toml | cut 
 .PHONY: build test
 
 build:
-	$(PACK) create-builder -b builder.toml $(BUILDER)
+	$(PACK) create-builder -c builder.toml $(BUILDER)
 
 test:
 	BUILDER=$(BUILDER) go test -v -tags=acceptance -count=1 ./acceptance
