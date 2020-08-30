@@ -1,6 +1,6 @@
-apiVersion: build.pivotal.io/v1alpha1
+apiVersion: kpack.io/v1alpha1
 kind: ClusterBuilder
 metadata:
   name: riff-application
 spec:
-  image: gcr.io/paketo-buildpacks/builder:base-platform-api-0.3
+  tag: gcr.io/paketo-buildpacks/builder:base-platform-api-0.3

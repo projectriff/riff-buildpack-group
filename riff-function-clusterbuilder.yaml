@@ -1,6 +1,6 @@
-apiVersion: build.pivotal.io/v1alpha1
+apiVersion: kpack.io/v1alpha1
 kind: ClusterBuilder
 metadata:
   name: riff-function
 spec:
-  image: gcr.io/projectriff/builder:latest
+  tag: gcr.io/projectriff/builder:latest
