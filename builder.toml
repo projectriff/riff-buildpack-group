@@ -57,5 +57,5 @@ uri = "https://github.com/buildpacks/lifecycle/releases/download/v0.9.1/lifecycl
 
 [stack]
 id          = "io.buildpacks.stacks.bionic"
-build-image = "gcr.io/paketo-buildpacks/build:0.0.0-base-cnb"
+build-image = "gcr.io/paketo-buildpacks/build:0.0.94-base-cnb"
 run-image   = "gcr.io/paketo-buildpacks/run:base-cnb"
