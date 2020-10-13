@@ -53,7 +53,7 @@ group = [
 ]
 
 [lifecycle]
-uri = "https://github.com/buildpacks/lifecycle/releases/download/v0.0.0/lifecycle-v0.0.0+linux.x86-64.tgz"
+uri = "https://github.com/buildpacks/lifecycle/releases/download/v0.9.1/lifecycle-v0.9.1+linux.x86-64.tgz"
 
 [stack]
 id          = "io.buildpacks.stacks.bionic"
