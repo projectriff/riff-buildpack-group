@@ -9,7 +9,7 @@ buildpacks = [
   { id = "paketo-buildpacks/yarn-install",         uri = "https://github.com/paketo-buildpacks/yarn-install/releases/download/v0.1.36/yarn-install-v0.1.36.tgz" },
   { id = "projectriff/command-function",           image = "gcr.io/projectriff/command-function:0.0.0" },
   { id = "projectriff/java-function",              image = "gcr.io/projectriff/java-function:0.0.0" },
-  { id = "projectriff/node-function",              image = "gcr.io/projectriff/node-function:0.0.0" },
+  { id = "projectriff/node-function",              image = "gcr.io/projectriff/node-function:1.4.0" },
   { id = "projectriff/streaming-http-adapter",     image = "gcr.io/projectriff/streaming-http-adapter:0.0.0" },
 ]
 
