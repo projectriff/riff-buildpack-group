@@ -1,0 +1,89 @@
+name: Update Build Image
+"on":
+    schedule:
+        - cron: 15 * * * *
+    workflow_dispatch: {}
+jobs:
+    update:
+        name: Update Build Image
+        runs-on:
+            - ubuntu-latest
+        steps:
+            - name: Docker login gcr.io
+              uses: docker/login-action@v1
+              with:
+                password: ${{ secrets.RIFF_GCLOUD_SERVICE_ACCOUNT_KEY }}
+                registry: gcr.io
+                username: _json_key
+            - uses: actions/checkout@v2
+            - uses: actions/setup-go@v2
+              with:
+                go-version: "1.15"
+            - name: Install crane
+              run: |
+                #!/usr/bin/env bash
+
+                set -euo pipefail
+
+                GO111MODULE=on go get -u -ldflags="-s -w" github.com/google/go-containerregistry/cmd/crane
+            - name: Install update-build-image-dependency
+              run: |
+                #!/usr/bin/env bash
+
+                set -euo pipefail
+
+                GO111MODULE=on go get -u -ldflags="-s -w" github.com/paketo-buildpacks/libpak/cmd/update-build-image-dependency
+            - name: Install yj
+              run: |
+                #!/usr/bin/env bash
+
+                set -euo pipefail
+
+                mkdir -p "${HOME}"/bin
+                echo "${HOME}/bin" >> "${GITHUB_PATH}"
+
+                curl \
+                  --location \
+                  --show-error \
+                  --silent \
+                  --output "${HOME}"/bin/yj \
+                  "https://github.com/sclevine/yj/releases/download/v${YJ_VERSION}/yj-linux"
+
+                chmod +x "${HOME}"/bin/yj
+              env:
+                YJ_VERSION: 5.0.0
+            - id: build-image
+              name: Update Build Image Dependency
+              run: |
+                #!/usr/bin/env bash
+
+                set -euo pipefail
+
+                OLD_VERSION=$(yj -tj < builder.toml | jq -r ".stack.\"build-image\" | capture(\"${IMAGE}:(?<version>.+-${CLASSIFIER})\") | .version")
+                NEW_VERSION=$(crane ls "${IMAGE}" | grep ".*-${CLASSIFIER}" | sort -V | tail -n 1)
+
+                update-build-image-dependency \
+                  --builder-toml builder.toml \
+                  --version "${NEW_VERSION}"
+
+                git add builder.toml
+                git checkout -- .
+
+                echo "::set-output name=old-version::${OLD_VERSION}"
+                echo "::set-output name=new-version::${NEW_VERSION}"
+              env:
+                CLASSIFIER: base-cnb
+                IMAGE: gcr.io/paketo-buildpacks/build
+            - uses: peter-evans/create-pull-request@v3
+              with:
+                body: Bumps [`gcr.io/paketo-buildpacks/build`](https://gcr.io/paketo-buildpacks/build) from [`${{ steps.build-image.outputs.old-version }}`](https://gcr.io/paketo-buildpacks/build:${{ steps.build-image.outputs.old-version }}) to [`${{ steps.build-image.outputs.new-version }}`](https://gcr.io/paketo-buildpacks/build:${{ steps.build-image.outputs.new-version }}).
+                branch: update/build-image/build
+                commit-message: |-
+                    Bump gcr.io/paketo-buildpacks/build from ${{ steps.build-image.outputs.old-version }} to ${{ steps.build-image.outputs.new-version }}
+
+                    Bumps gcr.io/paketo-buildpacks/build from ${{ steps.build-image.outputs.old-version }} to ${{ steps.build-image.outputs.new-version }}.
+                delete-branch: true
+                labels: semver:minor, type:dependency-upgrade
+                signoff: true
+                title: Bump gcr.io/paketo-buildpacks/build from ${{ steps.build-image.outputs.old-version }} to ${{ steps.build-image.outputs.new-version }}
+                token: ${{ secrets.GITHUB_TOKEN }}

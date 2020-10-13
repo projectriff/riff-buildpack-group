@@ -1,0 +1,75 @@
+name: Create Builder
+"on":
+    release:
+        types:
+            - published
+jobs:
+    create-builder:
+        name: Create Builder
+        runs-on:
+            - ubuntu-latest
+        steps:
+            - name: Docker login gcr.io
+              uses: docker/login-action@v1
+              with:
+                password: ${{ secrets.RIFF_GCLOUD_SERVICE_ACCOUNT_KEY }}
+                registry: gcr.io
+                username: _json_key
+            - uses: actions/checkout@v2
+            - name: Install pack
+              run: |
+                #!/usr/bin/env bash
+
+                set -euo pipefail
+
+                mkdir -p "${HOME}"/bin
+                echo "${HOME}/bin" >> "${GITHUB_PATH}"
+
+                curl \
+                  --location \
+                  --show-error \
+                  --silent \
+                  "https://github.com/buildpacks/pack/releases/download/v${PACK_VERSION}/pack-v${PACK_VERSION}-linux.tgz" \
+                  | tar -C "${HOME}"/bin/ -xzv pack
+              env:
+                PACK_VERSION: 0.14.1
+            - id: version
+              name: Compute Version
+              run: |
+                #!/usr/bin/env bash
+
+                set -euo pipefail
+
+                if [[ ${GITHUB_REF} =~ refs/tags/v([0-9]+\.[0-9]+\.[0-9]+) ]]; then
+                  VERSION=${BASH_REMATCH[1]}
+                elif [[ ${GITHUB_REF} =~ refs/heads/(.+) ]]; then
+                  VERSION=${BASH_REMATCH[1]}
+                else
+                  VERSION=$(git rev-parse --short HEAD)
+                fi
+
+                echo "::set-output name=version::${VERSION}"
+                echo "Selected ${VERSION} from
+                  * ref: ${GITHUB_REF}
+                  * sha: ${GITHUB_SHA}
+                "
+            - name: Create Builder
+              run: |
+                #!/usr/bin/env bash
+
+                set -euo pipefail
+
+                if [[ -n "${PUBLISH+x}" ]]; then
+                  pack create-builder \
+                    "${BUILDER}:${VERSION}" \
+                    --config builder.toml \
+                    --publish
+                else
+                  pack create-builder \
+                    "${BUILDER}:${VERSION}" \
+                    --config builder.toml
+                fi
+              env:
+                BUILDER: gcr.io/projectriff/builder
+                PUBLISH: "true"
+                VERSION: ${{ steps.version.outputs.version }}
