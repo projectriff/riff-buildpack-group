@@ -1,6 +1,6 @@
 buildpacks = [
   { id = "paketo-buildpacks/bellsoft-liberica",    image = "gcr.io/paketo-buildpacks/bellsoft-liberica:0.0.0" },
-  { id = "paketo-buildpacks/gradle",               image = "gcr.io/paketo-buildpacks/gradle:0.0.0" },
+  { id = "paketo-buildpacks/gradle",               image = "gcr.io/paketo-buildpacks/gradle:3.2.0" },
   { id = "paketo-buildpacks/leiningen",            image = "gcr.io/paketo-buildpacks/leiningen:0.0.0" },
   { id = "paketo-buildpacks/maven",                image = "gcr.io/paketo-buildpacks/maven:0.0.0" },
   { id = "paketo-buildpacks/node-engine",          uri = "https://github.com/paketo-buildpacks/node-engine/releases/download/v0.0.203/node-engine-v0.0.203.tgz" },
@@ -10,7 +10,7 @@ buildpacks = [
   { id = "projectriff/command-function",           image = "gcr.io/projectriff/command-function:0.0.0" },
   { id = "projectriff/java-function",              image = "gcr.io/projectriff/java-function:0.0.0" },
   { id = "projectriff/node-function",              image = "gcr.io/projectriff/node-function:1.4.0" },
-  { id = "projectriff/streaming-http-adapter",     image = "gcr.io/projectriff/streaming-http-adapter:0.0.0" },
+  { id = "projectriff/streaming-http-adapter",     image = "gcr.io/projectriff/streaming-http-adapter:1.3.0" },
 ]
 
 [[order]]
