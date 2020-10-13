@@ -5,7 +5,7 @@ buildpacks = [
   { id = "paketo-buildpacks/maven",                image = "gcr.io/paketo-buildpacks/maven:0.0.0" },
   { id = "paketo-buildpacks/node-engine",          uri = "https://github.com/paketo-buildpacks/node-engine/releases/download/v0.0.203/node-engine-v0.0.203.tgz" },
   { id = "paketo-buildpacks/npm",                  uri = "https://github.com/paketo-buildpacks/npm/releases/download/v0.1.27/npm-v0.1.27.tgz" },
-  { id = "paketo-buildpacks/sbt",                  image = "gcr.io/paketo-buildpacks/sbt:0.0.0" },
+  { id = "paketo-buildpacks/sbt",                  image = "gcr.io/paketo-buildpacks/sbt:3.2.0" },
   { id = "paketo-buildpacks/yarn-install",         uri = "https://github.com/paketo-buildpacks/yarn-install/releases/download/v0.1.36/yarn-install-v0.1.36.tgz" },
   { id = "projectriff/command-function",           image = "gcr.io/projectriff/command-function:0.0.0" },
   { id = "projectriff/java-function",              image = "gcr.io/projectriff/java-function:0.0.0" },
