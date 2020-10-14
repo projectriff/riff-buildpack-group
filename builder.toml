@@ -3,7 +3,7 @@ buildpacks = [
   { id = "paketo-buildpacks/gradle",               image = "gcr.io/paketo-buildpacks/gradle:3.2.0" },
   { id = "paketo-buildpacks/leiningen",            image = "gcr.io/paketo-buildpacks/leiningen:1.2.0" },
   { id = "paketo-buildpacks/maven",                image = "gcr.io/paketo-buildpacks/maven:3.2.0" },
-  { id = "paketo-buildpacks/node-engine",          image = "gcr.io/paketo-buildpacks/node-engine:0.0.0" },
+  { id = "paketo-buildpacks/node-engine",          image = "gcr.io/paketo-buildpacks/node-engine:0.1.2" },
   { id = "paketo-buildpacks/npm",                  image = "gcr.io/paketo-buildpacks/npm:0.0.0" },
   { id = "paketo-buildpacks/sbt",                  image = "gcr.io/paketo-buildpacks/sbt:3.2.0" },
   { id = "paketo-buildpacks/yarn-install",         image = "gcr.io/paketo-buildpacks/yarn-install:0.0.0" },
