@@ -1,4 +1,4 @@
-name: Update yarn-install
+name: Update nodejs
 "on":
     schedule:
         - cron: 0 * * * *
@@ -87,17 +87,17 @@ jobs:
                 echo "::set-output name=old-version::${OLD_VERSION}"
                 echo "::set-output name=new-version::${NEW_VERSION}"
               env:
-                DEPENDENCY: gcr.io/paketo-buildpacks/yarn-install
+                DEPENDENCY: gcr.io/paketo-buildpacks/nodejs
             - uses: peter-evans/create-pull-request@v3
               with:
-                body: Bumps [`gcr.io/paketo-buildpacks/yarn-install`](https://gcr.io/paketo-buildpacks/yarn-install) from [`${{ steps.package.outputs.old-version }}`](https://gcr.io/paketo-buildpacks/yarn-install:${{ steps.package.outputs.old-version }}) to [`${{ steps.package.outputs.new-version }}`](https://gcr.io/paketo-buildpacks/yarn-install:${{ steps.package.outputs.new-version }}).
-                branch: update/package/yarn-install
+                body: Bumps [`gcr.io/paketo-buildpacks/nodejs`](https://gcr.io/paketo-buildpacks/nodejs) from [`${{ steps.package.outputs.old-version }}`](https://gcr.io/paketo-buildpacks/nodejs:${{ steps.package.outputs.old-version }}) to [`${{ steps.package.outputs.new-version }}`](https://gcr.io/paketo-buildpacks/nodejs:${{ steps.package.outputs.new-version }}).
+                branch: update/package/nodejs
                 commit-message: |-
-                    Bump gcr.io/paketo-buildpacks/yarn-install from ${{ steps.package.outputs.old-version }} to ${{ steps.package.outputs.new-version }}
+                    Bump gcr.io/paketo-buildpacks/nodejs from ${{ steps.package.outputs.old-version }} to ${{ steps.package.outputs.new-version }}
 
-                    Bumps gcr.io/paketo-buildpacks/yarn-install from ${{ steps.package.outputs.old-version }} to ${{ steps.package.outputs.new-version }}.
+                    Bumps gcr.io/paketo-buildpacks/nodejs from ${{ steps.package.outputs.old-version }} to ${{ steps.package.outputs.new-version }}.
                 delete-branch: true
                 labels: semver:minor, type:dependency-upgrade
                 signoff: true
-                title: Bump gcr.io/paketo-buildpacks/yarn-install from ${{ steps.package.outputs.old-version }} to ${{ steps.package.outputs.new-version }}
+                title: Bump gcr.io/paketo-buildpacks/nodejs from ${{ steps.package.outputs.old-version }} to ${{ steps.package.outputs.new-version }}
                 token: ${{ secrets.GITHUB_TOKEN }}

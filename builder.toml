@@ -3,10 +3,8 @@ buildpacks = [
   { id = "paketo-buildpacks/gradle",               image = "gcr.io/paketo-buildpacks/gradle:3.2.0" },
   { id = "paketo-buildpacks/leiningen",            image = "gcr.io/paketo-buildpacks/leiningen:1.2.0" },
   { id = "paketo-buildpacks/maven",                image = "gcr.io/paketo-buildpacks/maven:3.2.0" },
-  { id = "paketo-buildpacks/node-engine",          image = "gcr.io/paketo-buildpacks/node-engine:0.1.2" },
-  { id = "paketo-buildpacks/npm",                  image = "gcr.io/paketo-buildpacks/npm:0.1.81" },
+  { id = "paketo-buildpacks/nodejs",               image = "gcr.io/paketo-buildpacks/nodejs:0.0.0" },
   { id = "paketo-buildpacks/sbt",                  image = "gcr.io/paketo-buildpacks/sbt:3.2.0" },
-  { id = "paketo-buildpacks/yarn-install",         image = "gcr.io/paketo-buildpacks/yarn-install:0.2.0" },
   { id = "projectriff/command-function",           image = "gcr.io/projectriff/command-function:1.4.0" },
   { id = "projectriff/java-function",              image = "gcr.io/projectriff/java-function:1.4.0" },
   { id = "projectriff/node-function",              image = "gcr.io/projectriff/node-function:1.4.0" },
@@ -26,23 +24,7 @@ group = [
 
 [[order]]
 group = [
-  { id = "paketo-buildpacks/node-engine" },
-  { id = "paketo-buildpacks/yarn-install" },
-  { id = "projectriff/streaming-http-adapter" },
-  { id = "projectriff/node-function" },
-]
-
-[[order]]
-group = [
-  { id = "paketo-buildpacks/node-engine" },
-  { id = "paketo-buildpacks/npm" },
-  { id = "projectriff/streaming-http-adapter" },
-  { id = "projectriff/node-function" },
-]
-
-[[order]]
-group = [
-  { id = "paketo-buildpacks/node-engine" },
+  { id = "paketo-buildpacks/nodejs" },
   { id = "projectriff/streaming-http-adapter" },
   { id = "projectriff/node-function" },
 ]
