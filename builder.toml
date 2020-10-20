@@ -4,7 +4,7 @@ buildpacks = [
   { id = "paketo-buildpacks/leiningen",            image = "gcr.io/paketo-buildpacks/leiningen:1.2.0" },
   { id = "paketo-buildpacks/maven",                image = "gcr.io/paketo-buildpacks/maven:3.2.0" },
   { id = "paketo-buildpacks/nodejs",               image = "gcr.io/paketo-buildpacks/nodejs:0.0.9" },
-  { id = "paketo-buildpacks/sbt",                  image = "gcr.io/paketo-buildpacks/sbt:3.2.0" },
+  { id = "paketo-buildpacks/sbt",                  image = "gcr.io/paketo-buildpacks/sbt:3.3.0" },
   { id = "projectriff/command-function",           image = "gcr.io/projectriff/command-function:1.4.0" },
   { id = "projectriff/java-function",              image = "gcr.io/projectriff/java-function:1.4.0" },
   { id = "projectriff/node-function",              image = "gcr.io/projectriff/node-function:1.4.0" },
