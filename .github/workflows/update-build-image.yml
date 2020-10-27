@@ -1,7 +1,7 @@
 name: Update Build Image
 "on":
     schedule:
-        - cron: 15 * * * *
+        - cron: 0 5 * * 1-5
     workflow_dispatch: {}
 jobs:
     update:
