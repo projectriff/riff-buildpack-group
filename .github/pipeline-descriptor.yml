@@ -1,0 +1,13 @@
+path: ../../../projectriff/builder
+
+codeowners:
+- path:  "*"
+  owner: "@projectriff/riff-dev"
+
+builder:
+  repository: gcr.io/projectriff/builder
+
+docker_credentials:
+- registry: gcr.io
+  username: _json_key
+  password: ${{ secrets.RIFF_GCLOUD_SERVICE_ACCOUNT_KEY }}
