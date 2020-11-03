@@ -45,7 +45,7 @@ jobs:
                 glob: lifecycle-v[^+]+\+linux\.x86-64\.tgz
                 owner: buildpacks
                 repository: lifecycle
-                token: ${{ secrets.GITHUB_TOKEN }}
+                token: ${{ secrets.RIFF_GITHUB_TOKEN }}
             - id: lifecycle
               name: Update Lifecycle Dependency
               run: |
@@ -78,4 +78,4 @@ jobs:
                 labels: semver:minor, type:dependency-upgrade
                 signoff: true
                 title: Bump lifecycle from ${{ steps.lifecycle.outputs.old-version }} to ${{ steps.lifecycle.outputs.new-version }}
-                token: ${{ secrets.GITHUB_TOKEN }}
+                token: ${{ secrets.RIFF_GITHUB_TOKEN }}

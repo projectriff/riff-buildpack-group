@@ -101,4 +101,4 @@ jobs:
                 labels: semver:minor, type:dependency-upgrade
                 signoff: true
                 title: Bump gcr.io/paketo-buildpacks/sbt from ${{ steps.package.outputs.old-version }} to ${{ steps.package.outputs.new-version }}
-                token: ${{ secrets.GITHUB_TOKEN }}
+                token: ${{ secrets.RIFF_GITHUB_TOKEN }}

@@ -87,4 +87,4 @@ jobs:
                 labels: semver:minor, type:dependency-upgrade
                 signoff: true
                 title: Bump gcr.io/paketo-buildpacks/build from ${{ steps.build-image.outputs.old-version }} to ${{ steps.build-image.outputs.new-version }}
-                token: ${{ secrets.GITHUB_TOKEN }}
+                token: ${{ secrets.RIFF_GITHUB_TOKEN }}
