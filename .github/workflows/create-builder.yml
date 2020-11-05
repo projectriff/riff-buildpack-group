@@ -57,7 +57,7 @@ jobs:
                 | tar -C "${HOME}"/bin -xz pack
               env:
                 PACK_VERSION: 0.14.2
-            - uses: actions/checkout@v2.3.4
+            - uses: actions/checkout@v2
             - id: version
               name: Compute Version
               run: |
