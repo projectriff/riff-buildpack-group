@@ -1,7 +1,7 @@
 buildpacks = [
   { id = "paketo-buildpacks/bellsoft-liberica",    image = "gcr.io/paketo-buildpacks/bellsoft-liberica:5.1.1" },
   { id = "paketo-buildpacks/gradle",               image = "gcr.io/paketo-buildpacks/gradle:3.3.0" },
-  { id = "paketo-buildpacks/leiningen",            image = "gcr.io/paketo-buildpacks/leiningen:1.2.0" },
+  { id = "paketo-buildpacks/leiningen",            image = "gcr.io/paketo-buildpacks/leiningen:1.2.1" },
   { id = "paketo-buildpacks/maven",                image = "gcr.io/paketo-buildpacks/maven:3.2.0" },
   { id = "paketo-buildpacks/nodejs",               image = "gcr.io/paketo-buildpacks/nodejs:0.0.10" },
   { id = "paketo-buildpacks/sbt",                  image = "gcr.io/paketo-buildpacks/sbt:3.4.0" },
