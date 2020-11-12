@@ -1,14 +1,14 @@
 buildpacks = [
-  { id = "paketo-buildpacks/bellsoft-liberica",    image = "gcr.io/paketo-buildpacks/bellsoft-liberica:5.2.0" },
-  { id = "paketo-buildpacks/gradle",               image = "gcr.io/paketo-buildpacks/gradle:3.3.1" },
-  { id = "paketo-buildpacks/leiningen",            image = "gcr.io/paketo-buildpacks/leiningen:1.2.1" },
-  { id = "paketo-buildpacks/maven",                image = "gcr.io/paketo-buildpacks/maven:3.2.1" },
-  { id = "paketo-buildpacks/nodejs",               image = "gcr.io/paketo-buildpacks/nodejs:0.0.10" },
-  { id = "paketo-buildpacks/sbt",                  image = "gcr.io/paketo-buildpacks/sbt:3.4.1" },
-  { id = "projectriff/command-function",           image = "gcr.io/projectriff/command-function:1.4.1" },
-  { id = "projectriff/java-function",              image = "gcr.io/projectriff/java-function:1.4.1" },
-  { id = "projectriff/node-function",              image = "gcr.io/projectriff/node-function:1.4.1" },
-  { id = "projectriff/streaming-http-adapter",     image = "gcr.io/projectriff/streaming-http-adapter:1.4.0" },
+  { id = "paketo-buildpacks/bellsoft-liberica",    uri = "docker://gcr.io/paketo-buildpacks/bellsoft-liberica:5.2.0" },
+  { id = "paketo-buildpacks/gradle",               uri = "docker://gcr.io/paketo-buildpacks/gradle:3.3.1" },
+  { id = "paketo-buildpacks/leiningen",            uri = "docker://gcr.io/paketo-buildpacks/leiningen:1.2.1" },
+  { id = "paketo-buildpacks/maven",                uri = "docker://gcr.io/paketo-buildpacks/maven:3.2.1" },
+  { id = "paketo-buildpacks/nodejs",               uri = "docker://gcr.io/paketo-buildpacks/nodejs:0.0.10" },
+  { id = "paketo-buildpacks/sbt",                  uri = "docker://gcr.io/paketo-buildpacks/sbt:3.4.1" },
+  { id = "projectriff/command-function",           uri = "docker://gcr.io/projectriff/command-function:1.4.1" },
+  { id = "projectriff/java-function",              uri = "docker://gcr.io/projectriff/java-function:1.4.1" },
+  { id = "projectriff/node-function",              uri = "docker://gcr.io/projectriff/node-function:1.4.1" },
+  { id = "projectriff/streaming-http-adapter",     uri = "docker://gcr.io/projectriff/streaming-http-adapter:1.4.0" },
 ]
 
 [[order]]
