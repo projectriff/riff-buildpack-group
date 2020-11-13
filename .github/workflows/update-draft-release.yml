@@ -81,6 +81,7 @@ jobs:
                     --argjson PAYLOAD "${PAYLOAD}" \
                     --argjson BUILDER "$(yj -tj < builder.toml)" \
                       '$PAYLOAD | .primary = $BUILDER')
+
                   for BUILDPACK in $(
                     jq -n -r \
                       --argjson PAYLOAD "${PAYLOAD}" \
