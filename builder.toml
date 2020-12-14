@@ -1,5 +1,5 @@
 buildpacks = [
-  { id = "paketo-buildpacks/bellsoft-liberica",    uri = "docker://gcr.io/paketo-buildpacks/bellsoft-liberica:5.2.1" },
+  { id = "paketo-buildpacks/bellsoft-liberica",    uri = "docker://gcr.io/paketo-buildpacks/bellsoft-liberica:6.0.0" },
   { id = "paketo-buildpacks/gradle",               uri = "docker://gcr.io/paketo-buildpacks/gradle:3.4.0" },
   { id = "paketo-buildpacks/leiningen",            uri = "docker://gcr.io/paketo-buildpacks/leiningen:1.2.1" },
   { id = "paketo-buildpacks/maven",                uri = "docker://gcr.io/paketo-buildpacks/maven:3.2.1" },
