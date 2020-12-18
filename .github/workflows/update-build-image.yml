@@ -91,6 +91,7 @@ jobs:
                 IMAGE: gcr.io/paketo-buildpacks/build
             - uses: peter-evans/create-pull-request@v3
               with:
+                author: ${{ secrets.RIFF_GITHUB_USERNAME }} <${{ secrets.RIFF_GITHUB_USERNAME }}@users.noreply.github.com>
                 body: Bumps [`gcr.io/paketo-buildpacks/build`](https://gcr.io/paketo-buildpacks/build) from [`${{ steps.build-image.outputs.old-version }}`](https://gcr.io/paketo-buildpacks/build:${{ steps.build-image.outputs.old-version }}) to [`${{ steps.build-image.outputs.new-version }}`](https://gcr.io/paketo-buildpacks/build:${{ steps.build-image.outputs.new-version }}).
                 branch: update/build-image/build
                 commit-message: |-

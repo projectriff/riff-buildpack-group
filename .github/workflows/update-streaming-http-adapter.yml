@@ -105,6 +105,7 @@ jobs:
                 DEPENDENCY: gcr.io/projectriff/streaming-http-adapter
             - uses: peter-evans/create-pull-request@v3
               with:
+                author: ${{ secrets.RIFF_GITHUB_USERNAME }} <${{ secrets.RIFF_GITHUB_USERNAME }}@users.noreply.github.com>
                 body: Bumps [`gcr.io/projectriff/streaming-http-adapter`](https://gcr.io/projectriff/streaming-http-adapter) from [`${{ steps.package.outputs.old-version }}`](https://gcr.io/projectriff/streaming-http-adapter:${{ steps.package.outputs.old-version }}) to [`${{ steps.package.outputs.new-version }}`](https://gcr.io/projectriff/streaming-http-adapter:${{ steps.package.outputs.new-version }}).
                 branch: update/package/streaming-http-adapter
                 commit-message: |-
