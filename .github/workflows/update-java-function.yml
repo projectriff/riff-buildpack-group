@@ -105,6 +105,7 @@ jobs:
                 DEPENDENCY: gcr.io/projectriff/java-function
             - uses: peter-evans/create-pull-request@v3
               with:
+                author: ${{ secrets.RIFF_GITHUB_USERNAME }} <${{ secrets.RIFF_GITHUB_USERNAME }}@users.noreply.github.com>
                 body: Bumps [`gcr.io/projectriff/java-function`](https://gcr.io/projectriff/java-function) from [`${{ steps.package.outputs.old-version }}`](https://gcr.io/projectriff/java-function:${{ steps.package.outputs.old-version }}) to [`${{ steps.package.outputs.new-version }}`](https://gcr.io/projectriff/java-function:${{ steps.package.outputs.new-version }}).
                 branch: update/package/java-function
                 commit-message: |-
